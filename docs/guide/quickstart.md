@@ -46,7 +46,7 @@ yarn add babel-plugin-import --dev
       "import",
       {
         "libraryName": "@fruits-chain/icons-react",
-        "libraryDirectory": "lib/module" // JavaScript，如果是 TypeScript 可以直接使用 `src`
+        "libraryDirectory": "es" // JavaScript，如果是 TypeScript 可以直接使用 `src`
       }
     ]
   ]
