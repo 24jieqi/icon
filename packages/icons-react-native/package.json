@@ -5,10 +5,15 @@
   "author": "LING_ZI_QING <onlylingstudio@gmail.com>",
   "homepage": "https://github.com/hjfruit/icon",
   "license": "ISC",
-  "main": "lib/icons-react-native.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "react-native": "src/index.ts",
   "directories": {},
   "files": [
-    "src"
+    "src",
+    "es",
+    "lib"
   ],
   "publishConfig": {
     "access": "public"
@@ -26,6 +31,7 @@
     "react-native-svg": "*"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@babel/runtime": "*",
+    "lodash": "*"
   }
 }

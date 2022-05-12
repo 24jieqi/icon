@@ -5,10 +5,14 @@
   "author": "LING_ZI_QING <onlylingstudio@gmail.com>",
   "homepage": "https://github.com/hjfruit/icon",
   "license": "ISC",
-  "main": "lib/icons-react.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "directories": {},
   "files": [
-    "src"
+    "src",
+    "es",
+    "lib"
   ],
   "publishConfig": {
     "access": "public"
@@ -22,5 +26,8 @@
   },
   "peerDependencies": {
     "react": "*"
+  },
+  "dependencies": {
+    "@babel/runtime": "*"
   }
 }
