@@ -1,0 +1,26 @@
+{
+  "name": "@fruits-chain/icons-react",
+  "version": "0.0.0",
+  "description": "🎨 React Icon",
+  "author": "LING_ZI_QING <onlylingstudio@gmail.com>",
+  "homepage": "https://github.com/hjfruit/icon",
+  "license": "ISC",
+  "main": "lib/icons-react.js",
+  "directories": {},
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjfruit/icon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hjfruit/icon/issues"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}

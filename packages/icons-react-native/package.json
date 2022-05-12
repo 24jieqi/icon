@@ -1,0 +1,31 @@
+{
+  "name": "@fruits-chain/icons-react-native",
+  "version": "0.0.0",
+  "description": "🎨 React Native Icon",
+  "author": "LING_ZI_QING <onlylingstudio@gmail.com>",
+  "homepage": "https://github.com/hjfruit/icon",
+  "license": "ISC",
+  "main": "lib/icons-react-native.js",
+  "directories": {},
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjfruit/icon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hjfruit/icon/issues"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-svg": "*"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
