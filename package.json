@@ -12,6 +12,7 @@
     "l-publish": "lerna publish",
     "l-publish-package": "lerna publish from-package",
     "dev": "dumi dev",
+    "doc:github-build": "cross-env PUBLIC_PATH=icon-doc/ dumi build",
     "build": "father-build",
     "gen:code": "ts-node --project tsconfig.json libs/iconfont-parser.ts",
     "commit": "npx git-cz"
