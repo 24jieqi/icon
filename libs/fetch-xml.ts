@@ -23,10 +23,10 @@ export interface XmlData {
   }
 }
 
-export const fetchXml = async () => {
+export const fetchXml = async (code: string) => {
   log('FgCyan', '🟩 加载 iconfont 资源')
 
-  const data = await fetch('https://at.alicdn.com/t/font_3392834_32lhwvn6u9.js')
+  const data = await fetch(`https://at.alicdn.com/t/${code}.js`)
   log('FgGreen', '✅ 加载 iconfont 资源')
   const dataText = await data.text()
   const matches = String(dataText).match(/'<svg>(.+?)<\/svg>'/)

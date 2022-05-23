@@ -14,7 +14,8 @@
     "dev": "dumi dev",
     "doc:github-build": "cross-env PUBLIC_PATH=icon-doc/ dumi build",
     "build": "father-build",
-    "gen:code": "ts-node --project tsconfig.json libs/iconfont-parser.ts",
+    "gen:code:web": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=web",
+    "gen:code:app": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=app",
     "commit": "npx git-cz"
   },
   "devDependencies": {
@@ -29,6 +30,8 @@
     "antd": "^4.20.4",
     "babel-plugin-import": "^1.13.5",
     "copy-to-clipboard": "^3.3.1",
+    "core-js": "^3.22.6",
+    "cross-env": "^7.0.3",
     "dumi": "^1.1.40",
     "father-build": "^1.22.1",
     "lerna": "^4.0.0",
@@ -38,7 +41,7 @@
     "react-native-svg": "^12.3.0",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.4",
-    "cross-env": "^7.0.3",
+    "umi-plugin-react-native": "^0.5.0",
     "xml2js": "^0.4.23"
   },
   "prettier": "@fruits-chain/prettier-config-preset",

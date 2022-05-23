@@ -1,13 +1,9 @@
 import fsPromise from 'fs/promises'
 
-import type { IconData } from '../fetch-xml'
+import type { GenCodeFN } from '../interface'
 import { prettierTypescript } from '../prettier.js'
 
-export const genReact = (
-  filePath: string,
-  componentName: string,
-  icon: IconData,
-) => {
+export const genReact: GenCodeFN = (output, componentName, icon) => {
   const code = prettierTypescript(
     `import React from 'react'
       const ${componentName}: React.FC<React.SVGProps<SVGSVGElement>> = props => {
@@ -26,5 +22,5 @@ export const genReact = (
       export default ${componentName}
       `,
   )
-  return fsPromise.writeFile(filePath, code)
+  return fsPromise.writeFile(output, code)
 }

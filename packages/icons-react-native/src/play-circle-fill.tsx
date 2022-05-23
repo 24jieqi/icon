@@ -1,6 +1,6 @@
 import React from 'react'
 import { Svg, Path } from 'react-native-svg'
-import { genIcon } from './helper/gen'
+import { genIcon } from './gen'
 const PlayCircleFill = genIcon((color, size, props) => {
   return (
     <Svg

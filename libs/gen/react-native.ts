@@ -1,17 +1,13 @@
 import fsPromise from 'fs/promises'
 
-import type { IconData } from '../fetch-xml'
+import type { GenCodeFN } from '../interface'
 import { prettierTypescript } from '../prettier.js'
 
-export const genReactNative = (
-  filePath: string,
-  componentName: string,
-  icon: IconData,
-) => {
+export const genReactNative: GenCodeFN = (output, componentName, icon) => {
   const code = prettierTypescript(
     `import React from 'react'
       import { Svg, Path } from 'react-native-svg'
-      import { genIcon } from './helper/gen'
+      import { genIcon } from './gen'
       const ${componentName} = genIcon((color, size, props) => {
         return (
           <Svg {...props} width={size} height={size} viewBox="${
@@ -25,5 +21,5 @@ export const genReactNative = (
       `,
   )
 
-  return fsPromise.writeFile(filePath, code)
+  return fsPromise.writeFile(output, code)
 }

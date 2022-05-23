@@ -1,18 +1,20 @@
 import fsPromise from 'fs/promises'
 
+import type { GenDemo } from '../interface'
 import { prettierTypescript } from '../prettier.js'
 
-export const genDemo = (
-  componentName: string,
-  filePath: string,
-  componentNames: string[],
-) => {
+export const genDemo: GenDemo = ({
+  componentName,
+  output,
+  componentNames,
+  name,
+}) => {
   const code = prettierTypescript(
     `import React from 'react'
 
-    import { ${componentNames.join(',')} } from '@fruits-chain/icons-react'
+    import { ${componentNames.join(',')} } from '${name}'
     
-    import Code from './code'
+    import Code from '../icon/code'
     
     const icons = [${componentNames
       .map(c => `{name: '${c}',Component: ${c}}`)
@@ -25,5 +27,5 @@ export const genDemo = (
     
     export default ${componentName}`,
   )
-  return fsPromise.writeFile(filePath, code)
+  return fsPromise.writeFile(output, code)
 }

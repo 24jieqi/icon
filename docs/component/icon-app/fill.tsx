@@ -5,9 +5,9 @@ import {
   DeleteFill,
   PlayCircleFill,
   SuccessFill,
-} from '@fruits-chain/icons-react'
+} from '@fruits-chain/icons-react-native'
 
-import Code from './code'
+import Code from '../icon/code'
 
 const icons = [
   { name: 'CrossFill', Component: CrossFill },

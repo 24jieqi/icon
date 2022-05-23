@@ -1,4 +1,4 @@
-import { Row, Col, message } from 'antd'
+import { Row, Col, Empty, message } from 'antd'
 import copy from 'copy-to-clipboard'
 import React, { memo } from 'react'
 
@@ -24,6 +24,10 @@ const Code: React.FC<CodeProps> = ({ icons }) => {
         <code className={STYLES.code}>{code}</code> copied 🎉
       </>,
     )
+  }
+
+  if (icons.length === 0) {
+    return <Empty />
   }
 
   return (
