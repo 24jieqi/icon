@@ -3,8 +3,11 @@
   "workspaces": [
     "packages/*"
   ],
-  "private": true,
+  "private": false,
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
