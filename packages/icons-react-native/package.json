@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "🎨 React Native Icon",
   "author": "LING_ZI_QING <onlylingstudio@gmail.com>",
-  "homepage": "https://github.com/hjfruit/icon",
+  "homepage": "https://hjfruit.github.io/icon-doc/",
   "license": "ISC",
   "main": "lib/index.js",
   "module": "es/index.js",
