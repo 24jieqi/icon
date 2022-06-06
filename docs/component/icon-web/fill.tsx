@@ -4,7 +4,7 @@ import {} from '@fruits-chain/icons-react'
 
 import Code from '../icon/code'
 
-const icons = []
+const icons: { name: string; Component: any }[] = []
 
 const Fill: React.FC = () => {
   return <Code icons={icons} />

@@ -16,7 +16,8 @@
     "build": "father-build",
     "gen:code:web": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=web",
     "gen:code:app": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=app",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "lint:ts": "tsc --noEmit && eslint packages/**/src --ext .ts,.tsx"
   },
   "devDependencies": {
     "@fruits-chain/eslint-config-preset": "^0.1.8",

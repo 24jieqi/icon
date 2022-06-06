@@ -9,7 +9,7 @@ import {
 
 import Code from '../icon/code'
 
-const icons = [
+const icons: { name: string; Component: any }[] = [
   { name: 'CrossFill', Component: CrossFill },
   { name: 'DeleteFill', Component: DeleteFill },
   { name: 'PlayCircleFill', Component: PlayCircleFill },

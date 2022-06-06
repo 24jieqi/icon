@@ -16,7 +16,7 @@ export const genDemo: GenDemo = ({
     
     import Code from '../icon/code'
     
-    const icons = [${componentNames
+    const icons: {name: string, Component: any}[] = [${componentNames
       .map(c => `{name: '${c}',Component: ${c}}`)
       .join(',')}
     ]

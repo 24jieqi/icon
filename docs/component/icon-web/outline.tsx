@@ -38,7 +38,7 @@ import {
 
 import Code from '../icon/code'
 
-const icons = [
+const icons: { name: string; Component: any }[] = [
   { name: 'ApartmentOutline', Component: ApartmentOutline },
   { name: 'ContainerExportOutline', Component: ContainerExportOutline },
   { name: 'ContainerImportOutline', Component: ContainerImportOutline },

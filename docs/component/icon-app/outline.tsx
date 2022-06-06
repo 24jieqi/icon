@@ -36,7 +36,7 @@ import {
 
 import Code from '../icon/code'
 
-const icons = [
+const icons: { name: string; Component: any }[] = [
   { name: 'ArrowDownOutline', Component: ArrowDownOutline },
   { name: 'ArrowLeftOutline', Component: ArrowLeftOutline },
   { name: 'ArrowRightOutline', Component: ArrowRightOutline },
