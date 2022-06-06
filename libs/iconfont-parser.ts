@@ -129,7 +129,7 @@ const genAppCode = () => {
 }
 
 const genWebCode = () => {
-  genCode('font_3420768_exh91f3oxoe', 'web', {
+  genCode('font_3420768_ihacqy4yg3', 'web', {
     output: path.join(__dirname, '../packages/icons-react/src'),
     removeIgnore: [],
     genCodeFN: genReact,

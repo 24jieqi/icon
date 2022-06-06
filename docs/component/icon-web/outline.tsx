@@ -26,12 +26,14 @@ import {
   InventoryRecordsOutline,
   MobilePhoneOutline,
   OperatorOutline,
+  PaletteYuanOutline,
   ReceiptOutline,
   SpeedOutline,
   TargetOutline,
   TaskPanelOutline,
   TeamOutline,
   YuanCircleOutline,
+  YuanImportOutline,
 } from '@fruits-chain/icons-react'
 
 import Code from '../icon/code'
@@ -62,12 +64,14 @@ const icons = [
   { name: 'InventoryRecordsOutline', Component: InventoryRecordsOutline },
   { name: 'MobilePhoneOutline', Component: MobilePhoneOutline },
   { name: 'OperatorOutline', Component: OperatorOutline },
+  { name: 'PaletteYuanOutline', Component: PaletteYuanOutline },
   { name: 'ReceiptOutline', Component: ReceiptOutline },
   { name: 'SpeedOutline', Component: SpeedOutline },
   { name: 'TargetOutline', Component: TargetOutline },
   { name: 'TaskPanelOutline', Component: TaskPanelOutline },
   { name: 'TeamOutline', Component: TeamOutline },
   { name: 'YuanCircleOutline', Component: YuanCircleOutline },
+  { name: 'YuanImportOutline', Component: YuanImportOutline },
 ]
 
 const Outline: React.FC = () => {

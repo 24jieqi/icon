@@ -1,3 +1,5 @@
+export { default as PaletteYuanOutline } from './palette-yuan-outline'
+export { default as YuanImportOutline } from './yuan-import-outline'
 export { default as FileCheckListOutline } from './file-check-list-outline'
 export { default as ContainerExportOutline } from './container-export-outline'
 export { default as MobilePhoneOutline } from './mobile-phone-outline'
