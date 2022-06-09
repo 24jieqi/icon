@@ -3,7 +3,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "private": false,
   "type": "module",
   "publishConfig": {
     "access": "public"
