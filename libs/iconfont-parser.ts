@@ -88,7 +88,7 @@ const genCode = async (
 
   log('FgCyan', '🟩 入口文件')
 
-  await fsPromise.writeFile(path.join(output, `index.tsx`), exportCode)
+  await fsPromise.writeFile(path.join(output, `index.ts`), exportCode)
 
   log('FgGreen', '✅ 入口文件')
 
