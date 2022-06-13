@@ -7,6 +7,7 @@ import { remove } from './fs.js'
 import { genDemo } from './gen/demo.js'
 import { genReactNative } from './gen/react-native.js'
 import { genReact } from './gen/react.js'
+import { string2CamelCase } from './helper.js'
 import type { GenCodeConfig } from './interface'
 import { log } from './log.js'
 import { prettierTypescript } from './prettier.js'
@@ -29,7 +30,11 @@ const genCode = async (
   type: 'app' | 'web',
   { output, removeIgnore, genCodeFN, name }: GenCodeConfig,
 ) => {
-  const data = await fetchXml(`https://at.alicdn.com/t/${id}.js`)
+  const data = await fetchXml(
+    `https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/${id}.js`,
+  )
+
+  // console.log(JSON.stringify(data))
 
   log('FgCyan', '🟩 删除旧文件')
 
@@ -44,23 +49,23 @@ const genCode = async (
   }[] = []
   const outlineComponents: string[] = []
   const fillComponents: string[] = []
+  const coloursComponents: string[] = []
 
   log('FgCyan', '🟩 生成各组件新文件')
 
   await Promise.all(
     data.svg.symbol.map(icon => {
-      const iconName = icon.$.id.replace(/^icon-/, '')
+      // iconpark 不会已 icon- 开头
+      const iconName = icon.$.id
       const isFill = /-fill$/.test(iconName)
-      const filename = isFill ? iconName : `${iconName}-outline`
-      const componentName = `-${filename}`.replace(
-        /(\-([a-z]))/g,
-        (_, __, p) => {
-          return p.toUpperCase()
-        },
-      )
+      const isColours = /-colours$/.test(iconName)
+      const filename = isFill || isColours ? iconName : `${iconName}-outline`
+      const componentName = string2CamelCase(`-${filename}`)
 
       if (isFill) {
         fillComponents.push(componentName)
+      } else if (isColours) {
+        coloursComponents.push(componentName)
       } else {
         outlineComponents.push(componentName)
       }
@@ -98,6 +103,7 @@ const genCode = async (
   // 排序
   outlineComponents.sort((a, b) => (a > b ? 1 : -1))
   fillComponents.sort((a, b) => (a > b ? 1 : -1))
+  coloursComponents.sort((a, b) => (a > b ? 1 : -1))
 
   await Promise.all([
     genDemo({
@@ -112,6 +118,12 @@ const genCode = async (
       componentName: 'Fill',
       componentNames: fillComponents,
     }),
+    genDemo({
+      name,
+      output: path.join(dirDocIcon, 'colours.tsx'),
+      componentName: 'Colours',
+      componentNames: coloursComponents,
+    }),
   ])
 
   log('FgGreen', '✅ 更新文档')
@@ -120,7 +132,7 @@ const genCode = async (
 }
 
 const genAppCode = () => {
-  genCode('font_3392834_vaet93bcor', 'app', {
+  genCode('svg_10968_36.707b4aa39f476e074e04cf44ac79390a', 'app', {
     output: path.join(__dirname, '../packages/icons-react-native/src'),
     removeIgnore: ['gen.tsx'],
     genCodeFN: genReactNative,
@@ -129,7 +141,7 @@ const genAppCode = () => {
 }
 
 const genWebCode = () => {
-  genCode('font_3420768_ihacqy4yg3', 'web', {
+  genCode('svg_10907_40.217a539f4b06bfb676bdbf69152a122e', 'web', {
     output: path.join(__dirname, '../packages/icons-react/src'),
     removeIgnore: [],
     genCodeFN: genReact,

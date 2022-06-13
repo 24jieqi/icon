@@ -17,8 +17,10 @@
     "dev": "dumi dev",
     "doc:github-build": "cross-env PUBLIC_PATH=icon-doc/ dumi build",
     "build": "father-build",
-    "gen:code:web": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=web",
-    "gen:code:app": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=app",
+    "gen:iconfont:web": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=web",
+    "gen:iconfont:app": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=app",
+    "gen:iconpark:web": "ts-node --project tsconfig.json libs/iconpark-parser.ts type=web",
+    "gen:iconpark:app": "ts-node --project tsconfig.json libs/iconpark-parser.ts type=app",
     "commit": "npx git-cz",
     "lint:ts": "tsc --noEmit && eslint packages/**/src --ext .ts,.tsx"
   },
