@@ -31,6 +31,7 @@ import {
   TimeCircleOutline,
   VolumeOutline,
   WarningCircleOutline,
+  WarningOutline,
   WeChatOutline,
 } from '@fruits-chain/icons-react-native'
 
@@ -67,6 +68,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'TimeCircleOutline', Component: TimeCircleOutline },
   { name: 'VolumeOutline', Component: VolumeOutline },
   { name: 'WarningCircleOutline', Component: WarningCircleOutline },
+  { name: 'WarningOutline', Component: WarningOutline },
   { name: 'WeChatOutline', Component: WeChatOutline },
 ]
 

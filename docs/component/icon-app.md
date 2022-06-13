@@ -33,3 +33,7 @@ export default () => {
 ## 实底风格
 
 <code compact inline src="./icon-app/fill.tsx" />
+
+## 多彩风格
+
+<code compact inline src="./icon-app/colours.tsx" />

@@ -6,6 +6,7 @@ import { log } from './log.js'
 interface IconPath {
   $: {
     d: string
+    fill?: string
   }
 }
 

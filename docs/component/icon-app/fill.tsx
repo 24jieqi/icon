@@ -1,6 +1,10 @@
 import React from 'react'
 
 import {
+  ArrowDownFill,
+  ArrowLeftFill,
+  ArrowRightFill,
+  ArrowUpFill,
   CrossFill,
   DeleteFill,
   PlayCircleFill,
@@ -10,6 +14,10 @@ import {
 import Code from '../icon/code'
 
 const icons: { name: string; Component: any }[] = [
+  { name: 'ArrowDownFill', Component: ArrowDownFill },
+  { name: 'ArrowLeftFill', Component: ArrowLeftFill },
+  { name: 'ArrowRightFill', Component: ArrowRightFill },
+  { name: 'ArrowUpFill', Component: ArrowUpFill },
   { name: 'CrossFill', Component: CrossFill },
   { name: 'DeleteFill', Component: DeleteFill },
   { name: 'PlayCircleFill', Component: PlayCircleFill },
