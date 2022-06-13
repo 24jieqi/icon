@@ -1,8 +1,34 @@
-# icon
+<div align="center">
+🎨 SVG Icons.
+</div>
 
-SVG Icons
+## React
 
-## 一些问题
+[icon-react-npm-url]: https://www.npmjs.com/package/@fruits-chain/icons-react
+
+<div align="center">
+
+[![](https://img.shields.io/npm/v/@fruits-chain/icons-react.svg)][icon-react-npm-url]
+[![](https://img.shields.io/npm/dm/@fruits-chain/icons-react.svg)][icon-react-npm-url]
+[![](https://img.shields.io/badge/language-typescript-blue.svg)](https://www.typescriptlang.org/)
+[![install size](https://packagephobia.com/badge?p=@fruits-chain/icons-react)](https://packagephobia.com/result?p=@fruits-chain/icons-react)
+
+</div>
+
+## React Native
+
+[icon-react-native-npm-url]: https://www.npmjs.com/package/@fruits-chain/icons-react-native
+
+<div align="center">
+
+[![](https://img.shields.io/npm/v/@fruits-chain/icons-react-native.svg)][icon-react-native-npm-url]
+[![](https://img.shields.io/npm/dm/@fruits-chain/icons-react-native.svg)][icon-react-native-npm-url]
+[![](https://img.shields.io/badge/language-typescript-blue.svg)](https://www.typescriptlang.org/)
+[![install size](https://packagephobia.com/badge?p=@fruits-chain/icons-react-native)](https://packagephobia.com/result?p=@fruits-chain/icons-react-native)
+
+</div>
+
+## 开发过程中遇见的一些问题
 
 ### ts-node
 
@@ -37,7 +63,7 @@ tsconfig.json
 
 ### ES Module
 
-#### \_\_dirname \_\_filename
+#### \_\_dirname 和 \_\_filename
 
 ```ts
 import path from 'path'
@@ -46,4 +72,3 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 ```
-
