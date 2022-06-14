@@ -10,6 +10,9 @@ nav:
 语义化的矢量图形。
 
 ```tsx
+/**
+ * defaultShowCode: true
+ */
 import React from 'react'
 import { ApartmentOutline } from '@fruits-chain/icons-react'
 
