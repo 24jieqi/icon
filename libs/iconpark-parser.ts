@@ -132,7 +132,7 @@ const genCode = async (
 }
 
 const genAppCode = () => {
-  genCode('svg_10968_48.49b89eb6bae9cb37d75b205254b78d28', 'app', {
+  genCode('svg_10968_49.169e4749385b82497f62180fb5d34e6a', 'app', {
     output: path.join(__dirname, '../packages/icons-react-native/src'),
     removeIgnore: ['gen.tsx'],
     genCodeFN: genReactNative,
@@ -141,7 +141,7 @@ const genAppCode = () => {
 }
 
 const genWebCode = () => {
-  genCode('svg_10907_40.217a539f4b06bfb676bdbf69152a122e', 'web', {
+  genCode('svg_10907_42.d3df6f69ad0c80d0f2aede48db62c0c6', 'web', {
     output: path.join(__dirname, '../packages/icons-react/src'),
     removeIgnore: [],
     genCodeFN: genReact,

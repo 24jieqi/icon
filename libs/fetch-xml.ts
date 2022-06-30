@@ -3,7 +3,7 @@ import { parseString } from 'xml2js'
 
 import { log } from './log.js'
 
-interface IconPath {
+export interface IconPath {
   $: {
     d: string
     fill?: string
@@ -16,6 +16,10 @@ export interface IconData {
     viewBox: string
     fill?: string
   }
+  g: {
+    $: {}
+    path: IconPath[]
+  }[]
   path: IconPath[]
 }
 
