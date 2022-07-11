@@ -132,7 +132,7 @@ const genCode = async (
 }
 
 const genAppCode = () => {
-  genCode('svg_10968_49.169e4749385b82497f62180fb5d34e6a', 'app', {
+  genCode('svg_10968_50.f5ded9aaa8599942a75b2323c620e07c', 'app', {
     output: path.join(__dirname, '../packages/icons-react-native/src'),
     removeIgnore: ['gen.tsx'],
     genCodeFN: genReactNative,
