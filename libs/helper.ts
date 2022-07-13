@@ -22,3 +22,5 @@ export const joinProps = (
       return `${string2CamelCase(_key)}="${_value}"`
     })
     .join(' ')
+
+export const ignorePropsBase = ['style', (s: string) => /^data-/.test(s)]

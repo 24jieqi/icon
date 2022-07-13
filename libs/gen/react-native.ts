@@ -1,6 +1,6 @@
 import fsPromise from 'fs/promises'
 
-import { joinProps } from '../helper.js'
+import { joinProps, ignorePropsBase } from '../helper.js'
 import type { GenCodeFN } from '../interface'
 import { prettierTypescript } from '../prettier.js'
 
@@ -12,6 +12,7 @@ export const genReactNative: GenCodeFN = (output, componentName, icon) => {
       const ${componentName} = genIcon((color, size, props) => {
         return (
           <Svg {...props} ${joinProps(icon.$, [
+            ...ignorePropsBase,
             'fill',
             'id',
           ])} width={size} height={size}>
@@ -19,7 +20,7 @@ export const genReactNative: GenCodeFN = (output, componentName, icon) => {
             ?.map(p => {
               // 所有的图标都是 path 吗，待确认、优化
               return `<Path ${joinProps(p.$, [
-                (s: string) => /^data-/.test(s),
+                ...ignorePropsBase,
                 'fill',
               ])} fill=${
                 p.$.fill && p.$.fill !== 'currentColor'

@@ -36,6 +36,7 @@ import {
   TeamOutline,
   YuanCircleOutline,
   YuanImportOutline,
+  YuanWadOutline,
 } from '@fruits-chain/icons-react'
 
 import Code from '../icon/code'
@@ -76,6 +77,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'TeamOutline', Component: TeamOutline },
   { name: 'YuanCircleOutline', Component: YuanCircleOutline },
   { name: 'YuanImportOutline', Component: YuanImportOutline },
+  { name: 'YuanWadOutline', Component: YuanWadOutline },
 ]
 
 const Outline: React.FC = () => {
