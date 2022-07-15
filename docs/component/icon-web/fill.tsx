@@ -1,10 +1,12 @@
 import React from 'react'
 
-import {} from '@fruits-chain/icons-react'
+import { SuccessFill } from '@fruits-chain/icons-react'
 
 import Code from '../icon/code'
 
-const icons: { name: string; Component: any }[] = []
+const icons: { name: string; Component: any }[] = [
+  { name: 'SuccessFill', Component: SuccessFill },
+]
 
 const Fill: React.FC = () => {
   return <Code icons={icons} />
