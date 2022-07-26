@@ -9,7 +9,7 @@ import type {
   ViewProps,
   ColorValue,
 } from 'react-native'
-import type { SvgProps } from 'react-native-svg'
+import type { SvgProps } from 'react-native-svg/lib/typescript/elements/Svg'
 
 export interface IconCommonProps extends SvgProps {
   /**
@@ -27,7 +27,7 @@ export interface IconCommonProps extends SvgProps {
   /**
    * svg 内部的样式
    */
-  svgStyle?: SvgProps['style']
+  svgStyle?: ViewProps['style']
 
   /**
    * 可点击的范围大小
@@ -112,6 +112,7 @@ export const genIcon = (render: IconRender): React.FC<IconCommonProps> => {
         bottom: hitSlopSize,
       })
       const viewStyle = getDefaultValue(style, defaultStyle)
+      const _svgStyle = getDefaultValue(svgStyle, defaultStyle)
 
       /** 适用于点击的属性 */
       const touchableOpacityProps = pickTouchablePropsField(restProps)
@@ -132,7 +133,7 @@ export const genIcon = (render: IconRender): React.FC<IconCommonProps> => {
                 : 'none'
             }>
             {render(color, size, {
-              style: defaultStyle,
+              style: _svgStyle,
               ...svgProps,
             })}
           </View>
