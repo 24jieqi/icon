@@ -81,7 +81,7 @@ const icons: { name: string; Component: any }[] = [
 ]
 
 const Outline: React.FC = () => {
-  return <Code icons={icons} />
+  return <Code icons={icons} currentColor={true} />
 }
 
 export default Outline

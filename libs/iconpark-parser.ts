@@ -28,7 +28,7 @@ const __dirname = path.dirname(__filename)
 const genCode = async (
   id: string,
   type: 'app' | 'web',
-  { output, removeIgnore, genCodeFN, name }: GenCodeConfig,
+  { output, removeIgnore, genCodeFN, name, currentColor }: GenCodeConfig,
 ) => {
   const data = await fetchXml(
     `https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/${id}.js`,
@@ -111,18 +111,21 @@ const genCode = async (
       output: path.join(dirDocIcon, 'outline.tsx'),
       componentName: 'Outline',
       componentNames: outlineComponents,
+      currentColor,
     }),
     genDemo({
       name,
       output: path.join(dirDocIcon, 'fill.tsx'),
       componentName: 'Fill',
       componentNames: fillComponents,
+      currentColor,
     }),
     genDemo({
       name,
       output: path.join(dirDocIcon, 'colours.tsx'),
       componentName: 'Colours',
       componentNames: coloursComponents,
+      currentColor,
     }),
   ])
 
@@ -146,6 +149,7 @@ const genWebCode = () => {
     removeIgnore: [],
     genCodeFN: genReact,
     name: '@fruits-chain/icons-react',
+    currentColor: true,
   })
 }
 

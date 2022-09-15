@@ -23,7 +23,7 @@ const icons: { name: string; Component: any }[] = [
 ]
 
 const Colours: React.FC = () => {
-  return <Code icons={icons} />
+  return <Code icons={icons} currentColor={true} />
 }
 
 export default Colours

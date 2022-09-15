@@ -8,6 +8,7 @@ export const genDemo: GenDemo = ({
   output,
   componentNames,
   name,
+  currentColor = false,
 }) => {
   const code = prettierTypescript(
     `import React from 'react'
@@ -22,7 +23,9 @@ export const genDemo: GenDemo = ({
     ]
     
     const ${componentName}: React.FC = () => {
-      return <Code icons={icons} />
+      return <Code icons={icons} currentColor={${JSON.stringify(
+        currentColor,
+      )}} />
     }
     
     export default ${componentName}`,

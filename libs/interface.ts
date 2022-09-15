@@ -11,6 +11,7 @@ export type GenDemo = (config: {
   componentName: string
   output: string
   componentNames: string[]
+  currentColor?: boolean
 }) => Promise<void>
 
 export interface GenCodeConfig {
@@ -18,4 +19,5 @@ export interface GenCodeConfig {
   output: string
   removeIgnore: string[]
   genCodeFN: GenCodeFN
+  currentColor?: boolean
 }

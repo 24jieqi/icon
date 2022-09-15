@@ -9,7 +9,7 @@ const icons: { name: string; Component: any }[] = [
 ]
 
 const Fill: React.FC = () => {
-  return <Code icons={icons} />
+  return <Code icons={icons} currentColor={true} />
 }
 
 export default Fill
