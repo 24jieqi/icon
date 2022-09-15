@@ -34,7 +34,7 @@ const genCode = async (
     `https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/${id}.js`,
   )
 
-  // console.log(JSON.stringify(data))
+  // console.log(JSON.stringify(data.svg.symbol))
 
   log('FgCyan', '🟩 删除旧文件')
 
@@ -132,7 +132,7 @@ const genCode = async (
 }
 
 const genAppCode = () => {
-  genCode('svg_10968_50.f5ded9aaa8599942a75b2323c620e07c', 'app', {
+  genCode('svg_10968_51.8d3c45a4d23ac98e4389cf15063ea4f9', 'app', {
     output: path.join(__dirname, '../packages/icons-react-native/src'),
     removeIgnore: ['gen.tsx'],
     genCodeFN: genReactNative,

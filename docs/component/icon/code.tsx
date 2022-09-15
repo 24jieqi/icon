@@ -6,7 +6,7 @@ import STYLES from './style.less'
 
 interface Icon {
   name: string
-  Component: React.FC
+  Component: React.FC<{ color: string }>
 }
 
 interface CodeProps {
@@ -40,7 +40,7 @@ const Code: React.FC<CodeProps> = ({ icons }) => {
             className={STYLES.item}
             onClick={genOnClick(icon.name)}>
             <span className={STYLES.icon}>
-              <icon.Component />
+              <icon.Component color="#098" />
             </span>
             <p>{icon.name}</p>
           </Col>
