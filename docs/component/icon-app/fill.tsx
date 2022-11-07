@@ -9,6 +9,7 @@ import {
   DeleteFill,
   PlayCircleFill,
   SuccessFill,
+  YuanCircleFill,
 } from '@fruits-chain/icons-react-native'
 
 import Code from '../icon/code'
@@ -22,6 +23,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'DeleteFill', Component: DeleteFill },
   { name: 'PlayCircleFill', Component: PlayCircleFill },
   { name: 'SuccessFill', Component: SuccessFill },
+  { name: 'YuanCircleFill', Component: YuanCircleFill },
 ]
 
 const Fill: React.FC = () => {
