@@ -54,7 +54,7 @@ export const genReactNative: GenCodeFN = (output, componentName, icon) => {
                   return `<G ${joinPropsAndReplaceCurrentColor(
                     g.$,
                     ignorePropsBase,
-                  )}>${renderPath(g.path)}</G>`
+                  )}>${renderPath(g.path || [])}</G>`
                 })
               : ''
           }

@@ -10,17 +10,30 @@ export interface IconPath {
   }
 }
 
+export interface IconRect {
+  $: {
+    x: string
+    y: string
+    width: string
+    height: string
+    rx: string
+    fill?: string
+  }
+}
+
 export interface IconData {
   $: {
     id: string
     viewBox: string
     fill?: string
   }
-  g: {
+  g?: {
     $: {}
-    path: IconPath[]
+    path?: IconPath[]
+    rect?: IconRect[]
   }[]
-  path: IconPath[]
+  path?: IconPath[]
+  rect?: IconRect[]
 }
 
 export interface XmlData {
