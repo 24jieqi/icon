@@ -3,6 +3,9 @@ export const string2CamelCase = (s: string) =>
     return p.toUpperCase()
   })
 
+export const string2UpperFirst = (s: string) =>
+  s.replace(/(^[a-z]{1})/, ($, $1) => $1.toLocaleUpperCase())
+
 export const excludeProps = (
   prop: Record<string, string>,
   exclude?: (string | ((s: string) => boolean))[],

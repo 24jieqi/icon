@@ -3,37 +3,24 @@ import { parseString } from 'xml2js'
 
 import { log } from './log.js'
 
-export interface IconPath {
-  $: {
-    d: string
-    fill?: string
-  }
+export interface IconLike {
+  $: Record<string, string>
 }
 
-export interface IconRect {
-  $: {
-    x: string
-    y: string
-    width: string
-    height: string
-    rx: string
-    fill?: string
-  }
+export interface IconG {
+  $: {}
+  defs?: {}[]
+  g?: IconG[]
+  path?: IconLike[]
+  rect?: IconLike[]
 }
 
-export interface IconData {
+export interface IconData extends Omit<IconG, '$'> {
   $: {
     id: string
     viewBox: string
     fill?: string
   }
-  g?: {
-    $: {}
-    path?: IconPath[]
-    rect?: IconRect[]
-  }[]
-  path?: IconPath[]
-  rect?: IconRect[]
 }
 
 export interface XmlData {
