@@ -26,8 +26,5 @@
   },
   "peerDependencies": {
     "react": "*"
-  },
-  "dependencies": {
-    "@babel/runtime": "*"
   }
 }
