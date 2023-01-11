@@ -3,6 +3,7 @@ import React from 'react'
 import {
   ApartmentOutline,
   CheckRecordsOutline,
+  ComputerOutline,
   ContainerExportOutline,
   ContainerImportOutline,
   ContainerOutline,
@@ -28,6 +29,7 @@ import {
   FileUserOutline,
   FileYuanOutline,
   FruitStorageOutline,
+  HomeOutline,
   HomeSettingOutline,
   ImageOpenOutline,
   ImageStowOutline,
@@ -54,6 +56,7 @@ import Code from '../icon/code'
 const icons: { name: string; Component: any }[] = [
   { name: 'ApartmentOutline', Component: ApartmentOutline },
   { name: 'CheckRecordsOutline', Component: CheckRecordsOutline },
+  { name: 'ComputerOutline', Component: ComputerOutline },
   { name: 'ContainerExportOutline', Component: ContainerExportOutline },
   { name: 'ContainerImportOutline', Component: ContainerImportOutline },
   { name: 'ContainerOutline', Component: ContainerOutline },
@@ -79,6 +82,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'FileUserOutline', Component: FileUserOutline },
   { name: 'FileYuanOutline', Component: FileYuanOutline },
   { name: 'FruitStorageOutline', Component: FruitStorageOutline },
+  { name: 'HomeOutline', Component: HomeOutline },
   { name: 'HomeSettingOutline', Component: HomeSettingOutline },
   { name: 'ImageOpenOutline', Component: ImageOpenOutline },
   { name: 'ImageStowOutline', Component: ImageStowOutline },
