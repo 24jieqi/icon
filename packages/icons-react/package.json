@@ -4,7 +4,7 @@
   "description": "🎨 React Icon",
   "author": "LING_ZI_QING <onlylingstudio@gmail.com>",
   "homepage": "https://hjfruit.github.io/icon-doc/",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
