@@ -1,14 +1,23 @@
 import React from 'react'
-import { Svg, Path } from 'react-native-svg'
+import { Svg, Circle, Path } from 'react-native-svg'
 
-import { genIcon } from './gen'
-const YuanCircleFill = genIcon((color, size, props) => {
+import { genFillIcon } from './gen'
+
+const YuanCircleFill = genFillIcon(({ size, color, strokeWidth }, props) => {
   return (
-    <Svg {...props} viewBox="0 0 1024 1024" width={size} height={size}>
+    <Svg {...props} viewBox="0 0 24 24" fill="none" width={size} height={size}>
+      <Circle r="10" cx="12" cy="12" fill={color} />
       <Path
-        fill={color}
-        d="M512 64c247.424 0 448 200.576 448 448S759.424 960 512 960 64 759.424 64 512 264.576 64 512 64Zm219.27 313.809H318.452l-24.943 77.175 170.484-.374v74.61h-151.05L288 606.396l175.994-.387v149.419h89.6V605.813l147.515-.323 24.65-76.27H553.595v-74.807l153.025-.335 24.65-76.27Zm-364.516-89.077 43.09 88.881h96.144l-42.805-88.294-96.429-.587ZM549.432 288l-43.444 89.613h93.822l42.888-88.465L549.432 288Z"
-        fillRule="evenodd"
+        d="M10.268 7.36a1 1 0 1 0-1.536 1.28l1.536-1.28ZM12 11l-.768.64a1 1 0 0 0 1.536 0L12 11Zm3.268-2.36a1 1 0 1 0-1.536-1.28l1.536 1.28Zm-6.536 0 2.5 3 1.536-1.28-2.5-3-1.536 1.28Zm4.036 3 2.5-3-1.536-1.28-2.5 3 1.536 1.28ZM9 13a1 1 0 1 0 0 2v-2Zm6 2a1 1 0 0 0 0-2v2Zm-6 0h6v-2H9v2Z"
+        fill="#FFF"
+      />
+      <Path
+        d="M9 10a1 1 0 1 0 0 2v-2Zm6 2a1 1 0 0 0 0-2v2Zm-6 0h6v-2H9v2Z"
+        fill="#FFF"
+      />
+      <Path
+        d="M13 11a1 1 0 0 0-2 0h2Zm-2 6a1 1 0 0 0 2 0h-2Zm0-6v6h2v-6h-2Z"
+        fill="#FFF"
       />
     </Svg>
   )

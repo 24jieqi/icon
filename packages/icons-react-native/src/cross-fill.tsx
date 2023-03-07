@@ -1,13 +1,19 @@
 import React from 'react'
-import { Svg, Path } from 'react-native-svg'
+import { Svg, Circle, Path } from 'react-native-svg'
 
-import { genIcon } from './gen'
-const CrossFill = genIcon((color, size, props) => {
+import { genFillIcon } from './gen'
+
+const CrossFill = genFillIcon(({ size, color, strokeWidth }, props) => {
   return (
-    <Svg {...props} viewBox="0 0 1024 1024" width={size} height={size}>
+    <Svg {...props} viewBox="0 0 24 24" fill="none" width={size} height={size}>
+      <Circle fill={color} cy="12" cx="12" r="10" />
       <Path
-        d="M512 42.667C771.2 42.667 981.333 252.8 981.333 512S771.2 981.333 512 981.333 42.667 771.2 42.667 512 252.8 42.667 512 42.667zm199.125 270.208a25.6 25.6 0 0 0-36.224 0L512 475.776 349.099 312.875l-3.2-2.688a25.6 25.6 0 0 0-33.024 38.912L475.776 512 312.875 674.901l-2.688 3.2a25.6 25.6 0 0 0 38.912 33.024L512 548.224l162.901 162.901 3.2 2.688a25.6 25.6 0 0 0 33.024-38.912L548.224 512l162.901-162.901 2.688-3.2a25.6 25.6 0 0 0-2.688-33.024z"
-        fill={color}
+        fill="#FFF"
+        d="M9.707 8.293a1 1 0 0 0-1.414 1.414l1.414-1.414Zm4.42 7.247a1 1 0 0 0 1.413-1.414l-1.414 1.414ZM8.292 9.707l5.833 5.833 1.414-1.414-5.833-5.833-1.414 1.414Z"
+      />
+      <Path
+        fill="#FFF"
+        d="M8.293 14.126a1 1 0 1 0 1.414 1.414l-1.414-1.414Zm7.247-4.419a1 1 0 0 0-1.414-1.414l1.414 1.414ZM9.707 15.54l5.833-5.833-1.414-1.414-5.833 5.833 1.414 1.414Z"
       />
     </Svg>
   )

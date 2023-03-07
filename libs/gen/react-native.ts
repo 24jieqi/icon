@@ -1,6 +1,8 @@
 import fsPromise from 'fs/promises'
 
-import type { IconLike, IconG } from '../fetch-xml'
+import lodash from 'lodash'
+
+import type { SVGGroupElementProps, BaseSVGElementProps } from '../fetch-xml'
 import {
   excludeProps,
   ignorePropsBase,
@@ -10,83 +12,103 @@ import {
 import type { GenCodeFN } from '../interface'
 import { prettierTypescript } from '../prettier.js'
 
-const joinPropsAndReplaceCurrentColor = (
-  props: Record<string, string>,
-  exclude?: (string | ((s: string) => boolean))[],
-) =>
-  excludeProps(props, exclude)
-    .map(([key, value]) => {
-      let _value = value
-      if (value === 'currentColor') {
-        _value = '{color}'
-      } else {
-        _value = `"${value}"`
-      }
-
-      return `${string2CamelCase(key)}=${_value}`
-    })
+const joinProps = (props: Record<string, string>) => {
+  return Object.entries(props)
+    .map(([key, value]) => `${string2CamelCase(key)}=${value}`)
     .join(' ')
+}
 
 const renderTag = (
   tag: string,
   props: Record<string, string>,
   children: string,
 ) => {
-  return `<${tag} ${joinPropsAndReplaceCurrentColor(props, ignorePropsBase)}${
+  return `<${tag} ${joinProps(props)}${
     children ? `>${children}</${tag}>` : ' />'
   }`
 }
 
-const renderIcon = (icon: IconG, callback: (tag: string) => void): string => {
-  return Object.entries(icon)
-    .map(([key, value]: [string, IconLike[]]) => {
-      if (key !== '$' && value?.length) {
-        const tag = string2UpperFirst(key)
+export const genReactNative: GenCodeFN = (output, componentName, svgProps) => {
+  const isOutline = /Outline$/.test(componentName)
+  const isColours = /Colours$/.test(componentName)
+  const correctionProps = (props: BaseSVGElementProps['$']) => {
+    return Object.entries(props).reduce<BaseSVGElementProps['$']>(
+      (prev, [key, value]) => {
+        if (isOutline && key === 'stroke-width') {
+          prev[key] = `{strokeWidth || ${value}}`
+        } else {
+          if (value === 'currentColor') {
+            prev[key] = '{color}'
+          } else {
+            prev[key] = `"${value}"`
+          }
+        }
 
-        callback(tag)
+        return prev
+      },
+      {},
+    )
+  }
 
-        return value
-          .map(p => {
-            return renderTag(
-              tag,
-              p.$,
-              key === 'g' ? renderIcon(p, callback) : '',
-            )
-          })
-          .join('')
-      }
-
-      return ''
-    })
-    .join('')
-}
-
-export const genReactNative: GenCodeFN = (
-  output,
-  componentName,
-  { defs, ...icon },
-) => {
   const tags: string[] = ['Svg']
-  const callback = (tag: string) => {
+  const collectTagName = (tag: string) => {
     if (!tags.includes(tag)) {
       tags.push(tag)
     }
   }
-  const iconJSX = renderIcon(icon, callback)
+  const renderIcon = (icon: SVGGroupElementProps): string => {
+    return Object.entries(icon)
+      .map(([key, props]) => {
+        if (props.length) {
+          const _props = props as SVGGroupElementProps[]
+          const tag = string2UpperFirst(key)
+
+          collectTagName(tag)
+
+          return _props
+            .map(prop => {
+              return renderTag(
+                tag,
+                correctionProps(
+                  excludeProps(
+                    (prop.$ as BaseSVGElementProps['$']) || {},
+                    ignorePropsBase,
+                  ),
+                ),
+                renderIcon(lodash.omit(prop, ['$']) || {}),
+              )
+            })
+            .join('')
+        }
+
+        return ''
+      })
+      .join('')
+  }
+
+  const elements: SVGGroupElementProps = lodash.omit(svgProps, ['$'])
+  const elementsJSX = renderIcon(elements)
+
+  const genFNString = isColours
+    ? 'genColoursIcon'
+    : isOutline
+    ? 'genOutlineIcon'
+    : 'genFillIcon'
 
   const code = prettierTypescript(
     `import React from 'react'
      import { ${tags.join(',')} } from 'react-native-svg'
 
-     import { genIcon } from './gen'
-     const ${componentName} = genIcon((color, size, props) => {
+     import { ${genFNString} } from './gen'
+
+     const ${componentName} = ${genFNString}(({size,color,strokeWidth}, props) => {
         return (
-          <Svg {...props} ${joinPropsAndReplaceCurrentColor(icon.$, [
-            ...ignorePropsBase,
-            'fill',
-            'id',
-          ])} width={size} height={size}>
-          ${iconJSX}
+          <Svg {...props} ${joinProps(
+            correctionProps(
+              excludeProps(svgProps.$, [...ignorePropsBase, 'id']),
+            ),
+          )} width={size} height={size}>
+          ${elementsJSX}
           </Svg>
         )
       })

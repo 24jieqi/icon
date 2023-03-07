@@ -1,16 +1,35 @@
 import React from 'react'
 import { Svg, Path } from 'react-native-svg'
 
-import { genIcon } from './gen'
-const InfoCircleOutline = genIcon((color, size, props) => {
-  return (
-    <Svg {...props} viewBox="0 0 1024 1024" width={size} height={size}>
-      <Path
-        d="M512 63c247.976 0 449 201.024 449 449S759.976 961 512 961 63 759.976 63 512 264.024 63 512 63zm0 64.143c-212.551 0-384.857 172.306-384.857 384.857 0 212.551 172.306 384.857 384.857 384.857 212.551 0 384.857-172.306 384.857-384.857 0-212.551-172.306-384.857-384.857-384.857zm.734 228.956c-28.34 0-51.314-22.974-51.314-51.314s22.974-51.314 51.314-51.314 51.314 22.974 51.314 51.314-22.974 51.314-51.314 51.314zm-55.202 72.232c22.783-18.773 56.47-15.523 75.244 7.26a53.452 53.452 0 0 1 11.86 27.969l.34 6.189-.745 232.808 36.074-22.913c13.581-8.65 31.2-5.803 41.44 6.011l2.84 3.81c8.65 13.582 5.803 31.2-6.011 41.441l-3.81 2.839-52.546 33.468a53.447 53.447 0 0 1-28.882 8.368c-27.675-.086-50.373-21.19-53.027-48.152l-.259-5.466.68-229.709-31.732 26.223c-12.426 10.24-30.261 9.56-41.864-.919l-3.282-3.436c-10.24-12.427-9.559-30.261.919-41.864l3.437-3.282 49.324-40.645z"
-        fillRule="evenodd"
-        fill={color}
-      />
-    </Svg>
-  )
-})
+import { genOutlineIcon } from './gen'
+
+const InfoCircleOutline = genOutlineIcon(
+  ({ size, color, strokeWidth }, props) => {
+    return (
+      <Svg
+        {...props}
+        viewBox="0 0 24 24"
+        fill="none"
+        width={size}
+        height={size}>
+        <Path
+          strokeWidth={strokeWidth || 2}
+          stroke={color}
+          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"
+        />
+        <Path
+          fill={color}
+          d="M12 5.5A1.25 1.25 0 1 1 12 8a1.25 1.25 0 0 1 0-2.5Zm.25 11.5v-7h-1"
+        />
+        <Path
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          strokeWidth={strokeWidth || 2}
+          stroke={color}
+          d="M12.25 17v-7h-1"
+        />
+      </Svg>
+    )
+  },
+)
 export default InfoCircleOutline

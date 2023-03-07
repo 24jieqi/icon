@@ -1,5 +1,5 @@
 export const string2CamelCase = (s: string) =>
-  s.replace(/(\-([a-z]))/g, (_, __, p) => {
+  s.replace(/(\-([a-zA-Z]))/g, (_, __, p) => {
     return p.toUpperCase()
   })
 
@@ -7,26 +7,31 @@ export const string2UpperFirst = (s: string) =>
   s.replace(/(^[a-z]{1})/, ($, $1) => $1.toLocaleUpperCase())
 
 export const excludeProps = (
-  prop: Record<string, string>,
+  props: Record<string, string>,
   exclude?: (string | ((s: string) => boolean))[],
 ) => {
-  return Object.entries(prop).filter(([_key]) => {
-    const result = (exclude || []).some(fn => {
-      if (typeof fn === 'function') {
-        return fn(_key)
-      }
-      return _key === fn
-    })
+  return Object.entries(props)
+    .filter(([_key]) => {
+      const result = (exclude || []).some(fn => {
+        if (typeof fn === 'function') {
+          return fn(_key)
+        }
+        return _key === fn
+      })
 
-    return !result
-  })
+      return !result
+    })
+    .reduce<Record<string, string>>((prev, [key, value]) => {
+      prev[key] = value
+      return prev
+    }, {})
 }
 
 export const joinProps = (
   prop: Record<string, string>,
   exclude?: (string | ((s: string) => boolean))[],
 ) =>
-  excludeProps(prop, exclude)
+  Object.entries(excludeProps(prop, exclude))
     .map(([_key, _value]) => {
       return `${string2CamelCase(_key)}="${_value}"`
     })

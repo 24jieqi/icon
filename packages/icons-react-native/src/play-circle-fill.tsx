@@ -1,13 +1,15 @@
 import React from 'react'
-import { Svg, Path } from 'react-native-svg'
+import { Svg, Circle, Path } from 'react-native-svg'
 
-import { genIcon } from './gen'
-const PlayCircleFill = genIcon((color, size, props) => {
+import { genFillIcon } from './gen'
+
+const PlayCircleFill = genFillIcon(({ size, color, strokeWidth }, props) => {
   return (
-    <Svg {...props} viewBox="0 0 1024 1024" width={size} height={size}>
+    <Svg {...props} viewBox="0 0 24 24" fill="none" width={size} height={size}>
+      <Circle fill={color} cy="12" cx="12" r="10" />
       <Path
-        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8c-1.4 1-3 1.5-4.7 1.5-4.4 0-8-3.6-8-8V353.7c0-1.7.5-3.3 1.5-4.7 2.6-3.6 7.6-4.4 11.2-1.8L656.1 506c.7.5 1.3 1.1 1.8 1.8 2.6 3.5 1.8 8.5-1.8 11.1z"
-        fill={color}
+        fill="#FFF"
+        d="M10.65 15.48a.4.4 0 0 1-.65-.312V8.832a.4.4 0 0 1 .65-.312l3.96 3.168a.4.4 0 0 1 0 .624l-3.96 3.168Z"
       />
     </Svg>
   )

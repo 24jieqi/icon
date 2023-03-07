@@ -1,13 +1,21 @@
 import React from 'react'
 import { Svg, Path } from 'react-native-svg'
 
-import { genIcon } from './gen'
-const WarningOutline = genIcon((color, size, props) => {
+import { genOutlineIcon } from './gen'
+
+const WarningOutline = genOutlineIcon(({ size, color, strokeWidth }, props) => {
   return (
-    <Svg {...props} viewBox="0 0 1024 1024" width={size} height={size}>
+    <Svg {...props} viewBox="0 0 24 24" fill="none" width={size} height={size}>
       <Path
+        d="M12 21.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z"
         fill={color}
-        d="M563.2 128H460.8v512h102.4V128zm0 665.856H460.8V896h102.4V793.856z"
+      />
+      <Path
+        d="M12 3v13"
+        stroke={color}
+        strokeWidth={strokeWidth || 2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </Svg>
   )

@@ -1,9 +1,9 @@
-import type { IconData } from './fetch-xml'
+import type { SVGElementProps } from './fetch-xml'
 
 export type GenCodeFN = (
   output: string,
   componentName: string,
-  icon: IconData,
+  icon: SVGElementProps,
 ) => Promise<void>
 
 export type GenDemo = (config: {

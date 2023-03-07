@@ -14,29 +14,63 @@ nav:
  * defaultShowCode: true
  */
 import React from 'react'
+import { View } from 'react-native'
 import { ArrowDownOutline } from '@fruits-chain/icons-react-native'
 
 export default () => {
   return (
-    <ArrowDownOutline
-      color="#098"
-      size={40}
-      onPress={() => {
-        console.log('onPress')
-      }}
-    />
+    <View style={{ flexDirection: 'row' }}>
+      <ArrowDownOutline
+        color="#987"
+        size={40}
+        strokeWidth={1}
+        onPress={() => {
+          console.log('onPress1')
+        }}
+      />
+      <ArrowDownOutline
+        color="#876"
+        size={40}
+        strokeWidth={2}
+        onPress={() => {
+          console.log('onPress2')
+        }}
+      />
+      <ArrowDownOutline
+        color="#765"
+        size={40}
+        strokeWidth={3}
+        onPress={() => {
+          console.log('onPress3')
+        }}
+      />
+      <ArrowDownOutline
+        color="#654"
+        size={40}
+        strokeWidth={4}
+        onPress={() => {
+          console.log('onPress4')
+        }}
+      />
+    </View>
   )
 }
 ```
 
 ## 线框风格
 
+> 支持 `size`、`color`、`strokeWidth` 自定义属性。
+
 <code compact inline src="./icon-app/outline.tsx" />
 
 ## 实底风格
 
+> 支持 `size`、`color` 自定义属性。
+
 <code compact inline src="./icon-app/fill.tsx" />
 
 ## 多彩风格
+
+> 支持 `size` 自定义属性。
 
 <code compact inline src="./icon-app/colours.tsx" />

@@ -1,16 +1,32 @@
 import React from 'react'
-import { Svg, Path } from 'react-native-svg'
+import { Svg, G, Circle, Path } from 'react-native-svg'
 
-import { genIcon } from './gen'
-const SuccessCircleColours = genIcon((color, size, props) => {
-  return (
-    <Svg {...props} viewBox="0 0 1024 1024" width={size} height={size}>
-      <Path
-        fillRule="evenodd"
-        d="M512 64c247.424 0 448 200.576 448 448S759.424 960 512 960 64 759.424 64 512 264.576 64 512 64Zm214.532 188.9h-425.6c-16.33 0-29.6 13.105-29.863 29.373l-.004.493V745.7c0 16.33 13.106 29.599 29.373 29.862l.494.004h425.6c16.33 0 29.599-13.105 29.862-29.372l.004-.494V282.766c0-16.494-13.371-29.866-29.866-29.866ZM621.084 365.174l43.932 31.918L489.464 638.72l-113.058-86.247 31.919-43.932 69.871 53.301 142.888-196.667Z"
-        fill="#34B545"
-      />
-    </Svg>
-  )
-})
+import { genColoursIcon } from './gen'
+
+const SuccessCircleColours = genColoursIcon(
+  ({ size, color, strokeWidth }, props) => {
+    return (
+      <Svg
+        {...props}
+        viewBox="0 0 24 24"
+        fill="none"
+        width={size}
+        height={size}>
+        <G>
+          <Circle fill="#34B545" cy="12" cx="12" r="12" />
+          <Path
+            fill="#FFF"
+            fillRule="evenodd"
+            d="M6.546 5.06h11a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-12a1 1 0 0 1 1-1"
+          />
+          <Path
+            fill="#34B545"
+            fillRule="evenodd"
+            d="M11.07 15.146 8.68 13.32a.4.4 0 0 1-.081-.553l.384-.53a.4.4 0 0 1 .567-.082l1.382 1.054a.2.2 0 0 0 .283-.041l3.472-4.779a.4.4 0 0 1 .559-.088l.53.385a.4.4 0 0 1 .088.558l-3.612 4.972-.614.846a.4.4 0 0 1-.566.083"
+          />
+        </G>
+      </Svg>
+    )
+  },
+)
 export default SuccessCircleColours

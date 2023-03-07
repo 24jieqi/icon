@@ -1,21 +1,38 @@
 import React from 'react'
-import { Svg, G, Path } from 'react-native-svg'
+import { Svg, Path } from 'react-native-svg'
 
-import { genIcon } from './gen'
-const CertificateOutline = genIcon((color, size, props) => {
-  return (
-    <Svg {...props} viewBox="0 0 24 24" width={size} height={size}>
-      <G
-        stroke={color}
-        strokeWidth="1.5"
+import { genOutlineIcon } from './gen'
+
+const CertificateOutline = genOutlineIcon(
+  ({ size, color, strokeWidth }, props) => {
+    return (
+      <Svg
+        {...props}
+        viewBox="0 0 24 24"
         fill="none"
-        fillRule="evenodd"
-        strokeLinejoin="round">
-        <Path d="M4.25 3.25h15.5v17.833H4.25z" />
-        <Path d="m12 6.333 1.442 2.922 3.225.469-2.334 2.274.551 3.212L12 13.694 9.116 15.21l.55-3.212-2.333-2.274 3.225-.469z" />
-        <Path strokeLinecap="round" d="M8.032 18.04h8.167" />
-      </G>
-    </Svg>
-  )
-})
+        width={size}
+        height={size}>
+        <Path
+          d="M9 18h6"
+          stroke={color}
+          strokeWidth={strokeWidth || 2}
+          strokeLinecap="round"
+        />
+        <Path
+          d="m12 5 1.474 3.055L17 8.438l-2.615 2.27L15.09 14 12 12.348 8.91 14l.705-3.292L7 8.438l3.526-.383L12 5Z"
+          stroke={color}
+          strokeWidth={strokeWidth || 2}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <Path
+          d="M4 2.4c0-.22.18-.4.4-.4h15.2c.22 0 .4.18.4.4v19.2a.4.4 0 0 1-.4.4H4.4a.4.4 0 0 1-.4-.4V2.4Z"
+          stroke={color}
+          strokeWidth={strokeWidth || 2}
+          strokeLinejoin="round"
+        />
+      </Svg>
+    )
+  },
+)
 export default CertificateOutline

@@ -1,13 +1,22 @@
 import React from 'react'
 import { Svg, Path } from 'react-native-svg'
 
-import { genIcon } from './gen'
-const VolumeOutline = genIcon((color, size, props) => {
+import { genOutlineIcon } from './gen'
+
+const VolumeOutline = genOutlineIcon(({ size, color, strokeWidth }, props) => {
   return (
-    <Svg {...props} viewBox="0 0 1024 1024" width={size} height={size}>
+    <Svg {...props} viewBox="0 0 24 24" fill="none" width={size} height={size}>
       <Path
-        fill={color}
-        d="M463.275 143.317c41.813-33.92 104.277-4.138 104.277 49.707v640c0 53.76-62.293 83.584-104.15 49.877L290.22 743.424H137.13a64 64 0 0 1-63.702-57.813l-.298-6.144V347.52a64 64 0 0 1 64-64h153.002zm344.832 38.87c90.88 78.464 144.81 198.272 144.81 327.637 0 126.805-51.84 244.48-139.648 323.072a32 32 0 0 1-42.666-47.659c74.154-66.346 118.314-166.698 118.314-275.413 0-110.933-45.952-212.992-122.624-279.168a32 32 0 1 1 41.814-48.47zm-304.555 10.837L312.832 347.52H137.088v331.947h175.659l190.72 153.6v-640zm192.213 94.848c46.08 62.293 71.552 140.032 71.552 221.952 0 74.88-21.333 146.39-60.416 205.952a32 32 0 0 1-53.504-35.157 310.87 310.87 0 0 0 49.92-170.795c0-68.267-21.12-132.65-59.008-183.893a32 32 0 0 1 51.456-38.059z"
+        d="M12 3 3 9.98v4L12 21V3Z"
+        stroke={color}
+        strokeWidth={strokeWidth || 2}
+        strokeLinejoin="round"
+      />
+      <Path
+        d="M15.5 8.5c.9 2.37.892 4.703 0 7M19 7c2 2 2 8 0 10"
+        stroke={color}
+        strokeWidth={strokeWidth || 2}
+        strokeLinecap="round"
       />
     </Svg>
   )

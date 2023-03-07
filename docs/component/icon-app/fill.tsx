@@ -5,10 +5,15 @@ import {
   ArrowLeftFill,
   ArrowRightFill,
   ArrowUpFill,
+  CheckedFill,
   CrossFill,
   DeleteFill,
+  LocationCircleFill,
+  LocationFill,
   PlayCircleFill,
+  PlusFill,
   SuccessFill,
+  UserFill,
   YuanCircleFill,
 } from '@fruits-chain/icons-react-native'
 
@@ -19,10 +24,15 @@ const icons: { name: string; Component: any }[] = [
   { name: 'ArrowLeftFill', Component: ArrowLeftFill },
   { name: 'ArrowRightFill', Component: ArrowRightFill },
   { name: 'ArrowUpFill', Component: ArrowUpFill },
+  { name: 'CheckedFill', Component: CheckedFill },
   { name: 'CrossFill', Component: CrossFill },
   { name: 'DeleteFill', Component: DeleteFill },
+  { name: 'LocationCircleFill', Component: LocationCircleFill },
+  { name: 'LocationFill', Component: LocationFill },
   { name: 'PlayCircleFill', Component: PlayCircleFill },
+  { name: 'PlusFill', Component: PlusFill },
   { name: 'SuccessFill', Component: SuccessFill },
+  { name: 'UserFill', Component: UserFill },
   { name: 'YuanCircleFill', Component: YuanCircleFill },
 ]
 

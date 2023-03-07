@@ -3,19 +3,25 @@ import { parseString } from 'xml2js'
 
 import { log } from './log.js'
 
-export interface IconLike {
+export interface BaseSVGElementProps {
   $: Record<string, string>
 }
 
-export interface IconG {
-  $: {}
-  defs?: {}[]
-  g?: IconG[]
-  path?: IconLike[]
-  rect?: IconLike[]
+export interface SVGGroupElementProps {
+  [key: string]:
+    | BaseSVGElementProps['$']
+    | Array<BaseSVGElementProps>
+    | Array<
+        Record<
+          string,
+          | BaseSVGElementProps['$']
+          | Array<BaseSVGElementProps>
+          | Array<SVGGroupElementProps>
+        >
+      >
 }
 
-export interface IconData extends Omit<IconG, '$'> {
+export interface SVGElementProps extends SVGGroupElementProps {
   $: {
     id: string
     viewBox: string
@@ -25,7 +31,7 @@ export interface IconData extends Omit<IconG, '$'> {
 
 export interface XmlData {
   svg: {
-    symbol: IconData[]
+    symbol: SVGElementProps[]
   }
 }
 

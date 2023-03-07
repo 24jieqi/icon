@@ -1,10 +1,11 @@
 import React from 'react'
 import { Svg, Path } from 'react-native-svg'
 
-import { genIcon } from './gen'
-const NewColours = genIcon((color, size, props) => {
+import { genColoursIcon } from './gen'
+
+const NewColours = genColoursIcon(({ size, color, strokeWidth }, props) => {
   return (
-    <Svg {...props} viewBox="0 0 24 24" width={size} height={size}>
+    <Svg {...props} viewBox="0 0 24 24" fill="none" width={size} height={size}>
       <Path
         fill="#F92F2F"
         d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H3V7Z"
