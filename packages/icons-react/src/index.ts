@@ -1,58 +1,180 @@
-export { default as ArrearsCircleColours } from './arrears-circle-colours'
-export { default as SuccessCircleColours } from './success-circle-colours'
-export { default as YuanCircleColours } from './yuan-circle-colours'
-export { default as TransferCircleColours } from './transfer-circle-colours'
-export { default as AlipayColours } from './alipay-colours'
-export { default as WeChatPayColours } from './we-chat-pay-colours'
-export { default as BankCardCircleColours } from './bank-card-circle-colours'
-export { default as SuccessFill } from './success-fill'
-export { default as ComputerOutline } from './computer-outline'
-export { default as CheckRecordsOutline } from './check-records-outline'
-export { default as CrossOutline } from './cross-outline'
-export { default as DrawerUnfoldOutline } from './drawer-unfold-outline'
-export { default as PageRecordOutline } from './page-record-outline'
-export { default as ContainerImportOutline } from './container-import-outline'
-export { default as DraftsOutline } from './drafts-outline'
-export { default as HomeOutline } from './home-outline'
-export { default as FileAgencySaleOutline } from './file-agency-sale-outline'
-export { default as DrawerFoldOutline } from './drawer-fold-outline'
-export { default as SuccessOutline } from './success-outline'
-export { default as ApartmentOutline } from './apartment-outline'
-export { default as FileRecordOutline } from './file-record-outline'
-export { default as DashboardOutline } from './dashboard-outline'
-export { default as ContainerExportOutline } from './container-export-outline'
-export { default as FileSealOutline } from './file-seal-outline'
-export { default as ImageStowOutline } from './image-stow-outline'
-export { default as ScreeningOutline } from './screening-outline'
-export { default as FileYuanOutline } from './file-yuan-outline'
-export { default as MoreCircleOutline } from './more-circle-outline'
-export { default as TeamOutline } from './team-outline'
-export { default as PaletteYuanOutline } from './palette-yuan-outline'
-export { default as PlusCircleOutline } from './plus-circle-outline'
-export { default as ContainerOutline } from './container-outline'
-export { default as YuanCircleOutline } from './yuan-circle-outline'
-export { default as FileChartOutline } from './file-chart-outline'
-export { default as FileTransportOutline } from './file-transport-outline'
-export { default as YuanWadOutline } from './yuan-wad-outline'
-export { default as TaskPanelOutline } from './task-panel-outline'
-export { default as ReceiptOutline } from './receipt-outline'
-export { default as DisplayOutline } from './display-outline'
-export { default as FileTextOutline } from './file-text-outline'
-export { default as SpeedOutline } from './speed-outline'
-export { default as TargetOutline } from './target-outline'
-export { default as DataReportOutline } from './data-report-outline'
-export { default as FileCarOutline } from './file-car-outline'
-export { default as FileJiuOutline } from './file-jiu-outline'
-export { default as ImageOpenOutline } from './image-open-outline'
-export { default as FileSearchOutline } from './file-search-outline'
-export { default as MobilePhoneOutline } from './mobile-phone-outline'
-export { default as InventoryRecordsOutline } from './inventory-records-outline'
-export { default as YuanImportOutline } from './yuan-import-outline'
-export { default as FruitStorageOutline } from './fruit-storage-outline'
-export { default as OperatorOutline } from './operator-outline'
-export { default as FileUserOutline } from './file-user-outline'
-export { default as HomeSettingOutline } from './home-setting-outline'
-export { default as ContainerSettingOutline } from './container-setting-outline'
-export { default as FileScreenOutline } from './file-screen-outline'
-export { default as FileCheckListOutline } from './file-check-list-outline'
-export { default as FileSettingOutline } from './file-setting-outline'
+import AlipayColours from './alipay-colours'
+import ApartmentOutline from './apartment-outline'
+import ArrearsCircleColours from './arrears-circle-colours'
+import BankCardCircleColours from './bank-card-circle-colours'
+import CheckRecordsOutline from './check-records-outline'
+import ComputerOutline from './computer-outline'
+import ContainerExportOutline from './container-export-outline'
+import ContainerImportOutline from './container-import-outline'
+import ContainerOutline from './container-outline'
+import ContainerSettingOutline from './container-setting-outline'
+import CrossOutline from './cross-outline'
+import DashboardOutline from './dashboard-outline'
+import DataReportOutline from './data-report-outline'
+import DisplayOutline from './display-outline'
+import DraftsOutline from './drafts-outline'
+import DrawerFoldOutline from './drawer-fold-outline'
+import DrawerUnfoldOutline from './drawer-unfold-outline'
+import FileAgencySaleOutline from './file-agency-sale-outline'
+import FileCarOutline from './file-car-outline'
+import FileChartOutline from './file-chart-outline'
+import FileCheckListOutline from './file-check-list-outline'
+import FileJiuOutline from './file-jiu-outline'
+import FileRecordOutline from './file-record-outline'
+import FileScreenOutline from './file-screen-outline'
+import FileSealOutline from './file-seal-outline'
+import FileSearchOutline from './file-search-outline'
+import FileSettingOutline from './file-setting-outline'
+import FileTextOutline from './file-text-outline'
+import FileTransportOutline from './file-transport-outline'
+import FileUserOutline from './file-user-outline'
+import FileYuanOutline from './file-yuan-outline'
+import FruitStorageOutline from './fruit-storage-outline'
+import HomeOutline from './home-outline'
+import HomeSettingOutline from './home-setting-outline'
+import ImageOpenOutline from './image-open-outline'
+import ImageStowOutline from './image-stow-outline'
+import InventoryRecordsOutline from './inventory-records-outline'
+import MobilePhoneOutline from './mobile-phone-outline'
+import MoreCircleOutline from './more-circle-outline'
+import OperatorOutline from './operator-outline'
+import PageRecordOutline from './page-record-outline'
+import PaletteYuanOutline from './palette-yuan-outline'
+import PlusCircleOutline from './plus-circle-outline'
+import ReceiptOutline from './receipt-outline'
+import ScreeningOutline from './screening-outline'
+import SpeedOutline from './speed-outline'
+import SuccessCircleColours from './success-circle-colours'
+import SuccessFill from './success-fill'
+import SuccessOutline from './success-outline'
+import TargetOutline from './target-outline'
+import TaskPanelOutline from './task-panel-outline'
+import TeamOutline from './team-outline'
+import TransferCircleColours from './transfer-circle-colours'
+import WeChatPayColours from './we-chat-pay-colours'
+import YuanCircleColours from './yuan-circle-colours'
+import YuanCircleOutline from './yuan-circle-outline'
+import YuanImportOutline from './yuan-import-outline'
+import YuanWadOutline from './yuan-wad-outline'
+
+export {
+  AlipayColours,
+  ApartmentOutline,
+  ArrearsCircleColours,
+  BankCardCircleColours,
+  CheckRecordsOutline,
+  ComputerOutline,
+  ContainerExportOutline,
+  ContainerImportOutline,
+  ContainerOutline,
+  ContainerSettingOutline,
+  CrossOutline,
+  DashboardOutline,
+  DataReportOutline,
+  DisplayOutline,
+  DraftsOutline,
+  DrawerFoldOutline,
+  DrawerUnfoldOutline,
+  FileAgencySaleOutline,
+  FileCarOutline,
+  FileChartOutline,
+  FileCheckListOutline,
+  FileJiuOutline,
+  FileRecordOutline,
+  FileScreenOutline,
+  FileSealOutline,
+  FileSearchOutline,
+  FileSettingOutline,
+  FileTextOutline,
+  FileTransportOutline,
+  FileUserOutline,
+  FileYuanOutline,
+  FruitStorageOutline,
+  HomeOutline,
+  HomeSettingOutline,
+  ImageOpenOutline,
+  ImageStowOutline,
+  InventoryRecordsOutline,
+  MobilePhoneOutline,
+  MoreCircleOutline,
+  OperatorOutline,
+  PageRecordOutline,
+  PaletteYuanOutline,
+  PlusCircleOutline,
+  ReceiptOutline,
+  ScreeningOutline,
+  SpeedOutline,
+  SuccessCircleColours,
+  SuccessFill,
+  SuccessOutline,
+  TargetOutline,
+  TaskPanelOutline,
+  TeamOutline,
+  TransferCircleColours,
+  WeChatPayColours,
+  YuanCircleColours,
+  YuanCircleOutline,
+  YuanImportOutline,
+  YuanWadOutline,
+}
+
+export default {
+  AlipayColours,
+  ApartmentOutline,
+  ArrearsCircleColours,
+  BankCardCircleColours,
+  CheckRecordsOutline,
+  ComputerOutline,
+  ContainerExportOutline,
+  ContainerImportOutline,
+  ContainerOutline,
+  ContainerSettingOutline,
+  CrossOutline,
+  DashboardOutline,
+  DataReportOutline,
+  DisplayOutline,
+  DraftsOutline,
+  DrawerFoldOutline,
+  DrawerUnfoldOutline,
+  FileAgencySaleOutline,
+  FileCarOutline,
+  FileChartOutline,
+  FileCheckListOutline,
+  FileJiuOutline,
+  FileRecordOutline,
+  FileScreenOutline,
+  FileSealOutline,
+  FileSearchOutline,
+  FileSettingOutline,
+  FileTextOutline,
+  FileTransportOutline,
+  FileUserOutline,
+  FileYuanOutline,
+  FruitStorageOutline,
+  HomeOutline,
+  HomeSettingOutline,
+  ImageOpenOutline,
+  ImageStowOutline,
+  InventoryRecordsOutline,
+  MobilePhoneOutline,
+  MoreCircleOutline,
+  OperatorOutline,
+  PageRecordOutline,
+  PaletteYuanOutline,
+  PlusCircleOutline,
+  ReceiptOutline,
+  ScreeningOutline,
+  SpeedOutline,
+  SuccessCircleColours,
+  SuccessFill,
+  SuccessOutline,
+  TargetOutline,
+  TaskPanelOutline,
+  TeamOutline,
+  TransferCircleColours,
+  WeChatPayColours,
+  YuanCircleColours,
+  YuanCircleOutline,
+  YuanImportOutline,
+  YuanWadOutline,
+} as const

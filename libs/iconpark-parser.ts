@@ -5,6 +5,8 @@ import { fileURLToPath } from 'url'
 import { fetchXml } from './fetch-xml.js'
 import { remove } from './fs.js'
 import { genDemo } from './gen/demo.js'
+import type { ComponentItem } from './gen/entry'
+import { genEntry } from './gen/entry.js'
 import { genReactNative } from './gen/react-native.js'
 import { genReact } from './gen/react.js'
 import { string2CamelCase } from './helper.js'
@@ -43,10 +45,7 @@ const genCode = async (
 
   log('FgGreen', '✅ 删除旧文件')
 
-  const finishedComponents: {
-    name: string
-    filename: string
-  }[] = []
+  const finishedComponents: ComponentItem[] = []
   const outlineComponents: string[] = []
   const fillComponents: string[] = []
   const coloursComponents: string[] = []
@@ -85,11 +84,7 @@ const genCode = async (
 
   log('FgGreen', '✅ 生成各组件新文件')
 
-  const exportCode = prettierTypescript(`
-      ${finishedComponents
-        .map(c => `export { default as ${c.name} } from './${c.filename}'`)
-        .join(';')}
-    `)
+  const exportCode = prettierTypescript(genEntry(finishedComponents))
 
   log('FgCyan', '🟩 入口文件')
 

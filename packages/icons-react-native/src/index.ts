@@ -1,100 +1,306 @@
-export { default as ArrowDownFill } from './arrow-down-fill'
-export { default as ArrowLeftFill } from './arrow-left-fill'
-export { default as ArrowUpFill } from './arrow-up-fill'
-export { default as ArrowRightFill } from './arrow-right-fill'
-export { default as CircleQianColours } from './circle-qian-colours'
-export { default as TransferCircleColours } from './transfer-circle-colours'
-export { default as YuanCircleColours } from './yuan-circle-colours'
-export { default as WeChatPayColours } from './we-chat-pay-colours'
-export { default as BankCardCircleColours } from './bank-card-circle-colours'
-export { default as SuccessCircleColours } from './success-circle-colours'
-export { default as AlipayColours } from './alipay-colours'
-export { default as NewColours } from './new-colours'
-export { default as WarningCircleOutline } from './warning-circle-outline'
-export { default as FileOutline } from './file-outline'
-export { default as CertificateOutline } from './certificate-outline'
-export { default as YuanCircleFill } from './yuan-circle-fill'
-export { default as CrossOutline } from './cross-outline'
-export { default as QuestionCircleOutline } from './question-circle-outline'
-export { default as CrossCircleOutline } from './cross-circle-outline'
-export { default as MobileScreenOutline } from './mobile-screen-outline'
-export { default as EyeOutline } from './eye-outline'
-export { default as QuestionOutline } from './question-outline'
-export { default as VolumeOutline } from './volume-outline'
-export { default as SwapLeftOutline } from './swap-left-outline'
-export { default as TelephoneOutline } from './telephone-outline'
-export { default as FiltrateOutline } from './filtrate-outline'
-export { default as ArrowUpOutline } from './arrow-up-outline'
-export { default as SearchOutline } from './search-outline'
-export { default as DeleatOutline } from './deleat-outline'
-export { default as SwapRightOutline } from './swap-right-outline'
-export { default as SOPOutline } from './s-o-p-outline'
-export { default as SwapOutline } from './swap-outline'
-export { default as WeChatOutline } from './we-chat-outline'
-export { default as WarningOutline } from './warning-outline'
-export { default as ClickCopyOutline } from './click-copy-outline'
-export { default as ArrowLeftOutline } from './arrow-left-outline'
-export { default as CircleOutline } from './circle-outline'
-export { default as EyeCloseOutline } from './eye-close-outline'
-export { default as ExplainOutline } from './explain-outline'
-export { default as ArrowRightOutline } from './arrow-right-outline'
-export { default as PlusOutline } from './plus-outline'
-export { default as CoordOutline } from './coord-outline'
-export { default as ArrowDownOutline } from './arrow-down-outline'
-export { default as TimeCircleOutline } from './time-circle-outline'
-export { default as SuccessCircleOutline } from './success-circle-outline'
-export { default as CopyOutline } from './copy-outline'
-export { default as EditOutline } from './edit-outline'
-export { default as ArrowClockwiseOutline } from './arrow-clockwise-outline'
-export { default as PlaceOutline } from './place-outline'
-export { default as ComputerOutline } from './computer-outline'
-export { default as SuccessOutline } from './success-outline'
-export { default as MoreOutline } from './more-outline'
-export { default as MenuOutline } from './menu-outline'
-export { default as MinusOutline } from './minus-outline'
-export { default as OrderDownOutline } from './order-down-outline'
-export { default as CameraOutline } from './camera-outline'
-export { default as OrderOutline } from './order-outline'
-export { default as ArrowsExpandOutline } from './arrows-expand-outline'
-export { default as ScanCodeOutline } from './scan-code-outline'
-export { default as UploadOutline } from './upload-outline'
-export { default as SwapVerticalOutline } from './swap-vertical-outline'
-export { default as SettingOutline } from './setting-outline'
-export { default as IdentificationOutline } from './identification-outline'
-export { default as OrderUpOutline } from './order-up-outline'
-export { default as LocationOutline } from './location-outline'
-export { default as HomeOutline } from './home-outline'
-export { default as DoubleArrowClockwiseOutline } from './double-arrow-clockwise-outline'
-export { default as IllustrateOutline } from './illustrate-outline'
-export { default as CirclePlusOutline } from './circle-plus-outline'
-export { default as PhotoOutline } from './photo-outline'
-export { default as ArrowsShrinkOutline } from './arrows-shrink-outline'
-export { default as ThermometerOutline } from './thermometer-outline'
-export { default as InfoCircleOutline } from './info-circle-outline'
-export { default as CircleMoreOutline } from './circle-more-outline'
-export { default as WordColours } from './word-colours'
-export { default as ExcelColours } from './excel-colours'
-export { default as PDFColours } from './PDF-colours'
-export { default as VideoColours } from './video-colours'
-export { default as CircleZhuangColours } from './circle-zhuang-colours'
-export { default as CircleZhuanColours } from './circle-zhuan-colours'
-export { default as CircleZhongColours } from './circle-zhong-colours'
-export { default as CircleXieColours } from './circle-xie-colours'
-export { default as CircleQiColours } from './circle-qi-colours'
-export { default as CircleJingColours } from './circle-jing-colours'
-export { default as WeChatCircleOfFriendsColours } from './we-chat-circle-of-friends-colours'
-export { default as WeiboColours } from './weibo-colours'
-export { default as CheckedFill } from './checked-fill'
-export { default as CircleDisabledColours } from './circle-disabled-colours'
-export { default as QQColours } from './QQ-colours'
-export { default as CheckedOutline } from './checked-outline'
-export { default as SuccessFill } from './success-fill'
-export { default as PlayCircleFill } from './play-circle-fill'
-export { default as CrossFill } from './cross-fill'
-export { default as DeleteFill } from './delete-fill'
-export { default as LocationCircleFill } from './location-circle-fill'
-export { default as LocationFill } from './location-fill'
-export { default as PlusFill } from './plus-fill'
-export { default as UserFill } from './user-fill'
-export { default as VerticalAlignTopOutline } from './vertical-align-top-outline'
-export { default as WeChatColours } from './we-chat-colours'
+import AlipayColours from './alipay-colours'
+import ArrowClockwiseOutline from './arrow-clockwise-outline'
+import ArrowDownFill from './arrow-down-fill'
+import ArrowDownOutline from './arrow-down-outline'
+import ArrowLeftFill from './arrow-left-fill'
+import ArrowLeftOutline from './arrow-left-outline'
+import ArrowRightFill from './arrow-right-fill'
+import ArrowRightOutline from './arrow-right-outline'
+import ArrowUpFill from './arrow-up-fill'
+import ArrowUpOutline from './arrow-up-outline'
+import ArrowsExpandOutline from './arrows-expand-outline'
+import ArrowsShrinkOutline from './arrows-shrink-outline'
+import BankCardCircleColours from './bank-card-circle-colours'
+import CameraOutline from './camera-outline'
+import CertificateOutline from './certificate-outline'
+import CheckedFill from './checked-fill'
+import CheckedOutline from './checked-outline'
+import CircleDisabledColours from './circle-disabled-colours'
+import CircleJingColours from './circle-jing-colours'
+import CircleMoreOutline from './circle-more-outline'
+import CircleOutline from './circle-outline'
+import CirclePlusOutline from './circle-plus-outline'
+import CircleQiColours from './circle-qi-colours'
+import CircleQianColours from './circle-qian-colours'
+import CircleXieColours from './circle-xie-colours'
+import CircleZhongColours from './circle-zhong-colours'
+import CircleZhuanColours from './circle-zhuan-colours'
+import CircleZhuangColours from './circle-zhuang-colours'
+import ClickCopyOutline from './click-copy-outline'
+import ComputerOutline from './computer-outline'
+import CoordOutline from './coord-outline'
+import CopyOutline from './copy-outline'
+import CrossCircleOutline from './cross-circle-outline'
+import CrossFill from './cross-fill'
+import CrossOutline from './cross-outline'
+import DeleatOutline from './deleat-outline'
+import DeleteFill from './delete-fill'
+import DoubleArrowClockwiseOutline from './double-arrow-clockwise-outline'
+import EditOutline from './edit-outline'
+import ExcelColours from './excel-colours'
+import ExplainOutline from './explain-outline'
+import EyeCloseOutline from './eye-close-outline'
+import EyeOutline from './eye-outline'
+import FileOutline from './file-outline'
+import FiltrateOutline from './filtrate-outline'
+import HomeOutline from './home-outline'
+import IdentificationOutline from './identification-outline'
+import IllustrateOutline from './illustrate-outline'
+import InfoCircleOutline from './info-circle-outline'
+import LocationCircleFill from './location-circle-fill'
+import LocationFill from './location-fill'
+import LocationOutline from './location-outline'
+import MenuOutline from './menu-outline'
+import MinusOutline from './minus-outline'
+import MobileScreenOutline from './mobile-screen-outline'
+import MoreOutline from './more-outline'
+import NewColours from './new-colours'
+import OrderDownOutline from './order-down-outline'
+import OrderOutline from './order-outline'
+import OrderUpOutline from './order-up-outline'
+import PDFColours from './PDF-colours'
+import PhotoOutline from './photo-outline'
+import PlaceOutline from './place-outline'
+import PlayCircleFill from './play-circle-fill'
+import PlusFill from './plus-fill'
+import PlusOutline from './plus-outline'
+import QQColours from './QQ-colours'
+import QuestionCircleOutline from './question-circle-outline'
+import QuestionOutline from './question-outline'
+import SOPOutline from './s-o-p-outline'
+import ScanCodeOutline from './scan-code-outline'
+import SearchOutline from './search-outline'
+import SettingOutline from './setting-outline'
+import SuccessCircleColours from './success-circle-colours'
+import SuccessCircleOutline from './success-circle-outline'
+import SuccessFill from './success-fill'
+import SuccessOutline from './success-outline'
+import SwapLeftOutline from './swap-left-outline'
+import SwapOutline from './swap-outline'
+import SwapRightOutline from './swap-right-outline'
+import SwapVerticalOutline from './swap-vertical-outline'
+import TelephoneOutline from './telephone-outline'
+import ThermometerOutline from './thermometer-outline'
+import TimeCircleOutline from './time-circle-outline'
+import TransferCircleColours from './transfer-circle-colours'
+import UploadOutline from './upload-outline'
+import UserFill from './user-fill'
+import VerticalAlignTopOutline from './vertical-align-top-outline'
+import VideoColours from './video-colours'
+import VolumeOutline from './volume-outline'
+import WarningCircleOutline from './warning-circle-outline'
+import WarningOutline from './warning-outline'
+import WeChatCircleOfFriendsColours from './we-chat-circle-of-friends-colours'
+import WeChatColours from './we-chat-colours'
+import WeChatOutline from './we-chat-outline'
+import WeChatPayColours from './we-chat-pay-colours'
+import WeiboColours from './weibo-colours'
+import WordColours from './word-colours'
+import YuanCircleColours from './yuan-circle-colours'
+import YuanCircleFill from './yuan-circle-fill'
+
+export {
+  AlipayColours,
+  ArrowClockwiseOutline,
+  ArrowDownFill,
+  ArrowDownOutline,
+  ArrowLeftFill,
+  ArrowLeftOutline,
+  ArrowRightFill,
+  ArrowRightOutline,
+  ArrowUpFill,
+  ArrowUpOutline,
+  ArrowsExpandOutline,
+  ArrowsShrinkOutline,
+  BankCardCircleColours,
+  CameraOutline,
+  CertificateOutline,
+  CheckedFill,
+  CheckedOutline,
+  CircleDisabledColours,
+  CircleJingColours,
+  CircleMoreOutline,
+  CircleOutline,
+  CirclePlusOutline,
+  CircleQiColours,
+  CircleQianColours,
+  CircleXieColours,
+  CircleZhongColours,
+  CircleZhuanColours,
+  CircleZhuangColours,
+  ClickCopyOutline,
+  ComputerOutline,
+  CoordOutline,
+  CopyOutline,
+  CrossCircleOutline,
+  CrossFill,
+  CrossOutline,
+  DeleatOutline,
+  DeleteFill,
+  DoubleArrowClockwiseOutline,
+  EditOutline,
+  ExcelColours,
+  ExplainOutline,
+  EyeCloseOutline,
+  EyeOutline,
+  FileOutline,
+  FiltrateOutline,
+  HomeOutline,
+  IdentificationOutline,
+  IllustrateOutline,
+  InfoCircleOutline,
+  LocationCircleFill,
+  LocationFill,
+  LocationOutline,
+  MenuOutline,
+  MinusOutline,
+  MobileScreenOutline,
+  MoreOutline,
+  NewColours,
+  OrderDownOutline,
+  OrderOutline,
+  OrderUpOutline,
+  PDFColours,
+  PhotoOutline,
+  PlaceOutline,
+  PlayCircleFill,
+  PlusFill,
+  PlusOutline,
+  QQColours,
+  QuestionCircleOutline,
+  QuestionOutline,
+  SOPOutline,
+  ScanCodeOutline,
+  SearchOutline,
+  SettingOutline,
+  SuccessCircleColours,
+  SuccessCircleOutline,
+  SuccessFill,
+  SuccessOutline,
+  SwapLeftOutline,
+  SwapOutline,
+  SwapRightOutline,
+  SwapVerticalOutline,
+  TelephoneOutline,
+  ThermometerOutline,
+  TimeCircleOutline,
+  TransferCircleColours,
+  UploadOutline,
+  UserFill,
+  VerticalAlignTopOutline,
+  VideoColours,
+  VolumeOutline,
+  WarningCircleOutline,
+  WarningOutline,
+  WeChatCircleOfFriendsColours,
+  WeChatColours,
+  WeChatOutline,
+  WeChatPayColours,
+  WeiboColours,
+  WordColours,
+  YuanCircleColours,
+  YuanCircleFill,
+}
+
+export default {
+  AlipayColours,
+  ArrowClockwiseOutline,
+  ArrowDownFill,
+  ArrowDownOutline,
+  ArrowLeftFill,
+  ArrowLeftOutline,
+  ArrowRightFill,
+  ArrowRightOutline,
+  ArrowUpFill,
+  ArrowUpOutline,
+  ArrowsExpandOutline,
+  ArrowsShrinkOutline,
+  BankCardCircleColours,
+  CameraOutline,
+  CertificateOutline,
+  CheckedFill,
+  CheckedOutline,
+  CircleDisabledColours,
+  CircleJingColours,
+  CircleMoreOutline,
+  CircleOutline,
+  CirclePlusOutline,
+  CircleQiColours,
+  CircleQianColours,
+  CircleXieColours,
+  CircleZhongColours,
+  CircleZhuanColours,
+  CircleZhuangColours,
+  ClickCopyOutline,
+  ComputerOutline,
+  CoordOutline,
+  CopyOutline,
+  CrossCircleOutline,
+  CrossFill,
+  CrossOutline,
+  DeleatOutline,
+  DeleteFill,
+  DoubleArrowClockwiseOutline,
+  EditOutline,
+  ExcelColours,
+  ExplainOutline,
+  EyeCloseOutline,
+  EyeOutline,
+  FileOutline,
+  FiltrateOutline,
+  HomeOutline,
+  IdentificationOutline,
+  IllustrateOutline,
+  InfoCircleOutline,
+  LocationCircleFill,
+  LocationFill,
+  LocationOutline,
+  MenuOutline,
+  MinusOutline,
+  MobileScreenOutline,
+  MoreOutline,
+  NewColours,
+  OrderDownOutline,
+  OrderOutline,
+  OrderUpOutline,
+  PDFColours,
+  PhotoOutline,
+  PlaceOutline,
+  PlayCircleFill,
+  PlusFill,
+  PlusOutline,
+  QQColours,
+  QuestionCircleOutline,
+  QuestionOutline,
+  SOPOutline,
+  ScanCodeOutline,
+  SearchOutline,
+  SettingOutline,
+  SuccessCircleColours,
+  SuccessCircleOutline,
+  SuccessFill,
+  SuccessOutline,
+  SwapLeftOutline,
+  SwapOutline,
+  SwapRightOutline,
+  SwapVerticalOutline,
+  TelephoneOutline,
+  ThermometerOutline,
+  TimeCircleOutline,
+  TransferCircleColours,
+  UploadOutline,
+  UserFill,
+  VerticalAlignTopOutline,
+  VideoColours,
+  VolumeOutline,
+  WarningCircleOutline,
+  WarningOutline,
+  WeChatCircleOfFriendsColours,
+  WeChatColours,
+  WeChatOutline,
+  WeChatPayColours,
+  WeiboColours,
+  WordColours,
+  YuanCircleColours,
+  YuanCircleFill,
+} as const
