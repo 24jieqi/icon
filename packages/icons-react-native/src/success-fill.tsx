@@ -1,15 +1,18 @@
 import React from 'react'
-import { Svg, Circle, Path } from 'react-native-svg'
+import { Svg, Path } from 'react-native-svg'
 
 import { genFillIcon } from './gen'
 
 const SuccessFill = genFillIcon(({ size, color, strokeWidth }, props) => {
   return (
     <Svg {...props} viewBox="0 0 24 24" fill="none" width={size} height={size}>
-      <Circle fill={color} cy="12" cx="12" r="10" />
       <Path
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10Z"
+        fill={color}
+      />
+      <Path
+        d="M7.08 12.372a.365.365 0 0 0 .04.499l3.097 2.997c.227.22.59.23.811.015l7.104-6.875c.149-.144.16-.362.017-.5l-.163-.157a.405.405 0 0 0-.512-.02l-6.619 5.206a.46.46 0 0 1-.483.022l-2.504-1.62a.386.386 0 0 0-.498.08l-.29.353Z"
         fill="#FFF"
-        d="M15.293 9.293a1 1 0 0 1 1.415 1.414l-1.415-1.414Zm-4.758 6.172.707.707a1 1 0 0 1-1.414 0l.707-.707Zm-4.242-2.828a1 1 0 0 1 1.414-1.415l-1.414 1.415Zm10.415-1.93-5.466 5.465-1.414-1.414 5.465-5.465 1.415 1.414Zm-6.88 5.465-3.535-3.535 1.414-1.415 3.535 3.536-1.414 1.414Z"
       />
     </Svg>
   )
