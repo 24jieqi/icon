@@ -14,7 +14,6 @@ import BankCardCircleColours from './bank-card-circle-colours'
 import CameraOutline from './camera-outline'
 import CertificateOutline from './certificate-outline'
 import CheckedFill from './checked-fill'
-import CheckedOutline from './checked-outline'
 import CircleDisabledColours from './circle-disabled-colours'
 import CircleJingColours from './circle-jing-colours'
 import CircleMoreOutline from './circle-more-outline'
@@ -116,7 +115,6 @@ export {
   CameraOutline,
   CertificateOutline,
   CheckedFill,
-  CheckedOutline,
   CircleDisabledColours,
   CircleJingColours,
   CircleMoreOutline,
@@ -219,7 +217,6 @@ export default {
   CameraOutline,
   CertificateOutline,
   CheckedFill,
-  CheckedOutline,
   CircleDisabledColours,
   CircleJingColours,
   CircleMoreOutline,
