@@ -4,14 +4,22 @@ const DisplayOutline: React.FC<React.SVGProps<SVGSVGElement>> = props => {
     <svg
       {...props}
       id="display"
-      viewBox="0 0 1024 1024"
-      fill="currentColor"
+      viewBox="0 0 24 24"
+      fill="none"
       focusable="false"
       width="1em"
       height="1em">
       <path
-        fill="currentColor"
-        d="M678 800.5c17.673 0 32 14.327 32 32 0 17.496-14.042 31.713-31.47 31.996l-.53.004H346c-17.673 0-32-14.327-32-32 0-17.496 14.042-31.713 31.47-31.996l.53-.004h332zm218-666.196c17.673 0 32 14.327 32 32V704c0 17.673-14.327 32-32 32H128c-17.673 0-32-14.327-32-32V166.304c0-17.673 14.327-32 32-32zm-32.001 63.999h-704v473.696h704V198.303z"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        stroke="currentColor"
+        d="M21.6 4c.22 0 .4.18.4.4v13.2a.4.4 0 0 1-.4.4H2.4a.4.4 0 0 1-.4-.4V4.4c0-.22.18-.4.4-.4h19.2Z"
+      />
+      <path
+        strokeLinecap="round"
+        strokeWidth="2"
+        stroke="currentColor"
+        d="M4 21h16"
       />
     </svg>
   )

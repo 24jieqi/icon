@@ -4,14 +4,23 @@ const MobilePhoneOutline: React.FC<React.SVGProps<SVGSVGElement>> = props => {
     <svg
       {...props}
       id="mobile-phone"
-      viewBox="0 0 1024 1024"
-      fill="currentColor"
+      viewBox="0 0 24 24"
+      fill="none"
       focusable="false"
       width="1em"
       height="1em">
       <path
-        fill="currentColor"
-        d="M832 96c17.673 0 32 14.327 32 32v768c0 17.673-14.327 32-32 32H192c-17.673 0-32-14.327-32-32V128c0-17.673 14.327-32 32-32zm-32 633.718H224V864h576V729.718zm-287.992 25.927c24.742 0 44.8 20.057 44.8 44.8 0 24.742-20.058 44.8-44.8 44.8-24.742 0-44.8-20.058-44.8-44.8 0-24.743 20.058-44.8 44.8-44.8zM800 160H224v505.718h576V160z"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        stroke="currentColor"
+        d="M20 21.6a.4.4 0 0 1-.4.4H4.4a.4.4 0 0 1-.4-.4V2.4c0-.22.18-.4.4-.4h15.2c.22 0 .4.18.4.4v19.2Z"
+      />
+      <path
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        strokeWidth="2"
+        stroke="currentColor"
+        d="M10 18h4"
       />
     </svg>
   )

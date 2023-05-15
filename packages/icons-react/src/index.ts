@@ -2,7 +2,11 @@ import AlipayColours from './alipay-colours'
 import ApartmentOutline from './apartment-outline'
 import ArrearsCircleColours from './arrears-circle-colours'
 import BankCardCircleColours from './bank-card-circle-colours'
+import BoardIndexOutline from './board-index-outline'
+import BoardLineOutline from './board-line-outline'
+import BoardPieOutline from './board-pie-outline'
 import CheckRecordsOutline from './check-records-outline'
+import ComputerIndexOutline from './computer-index-outline'
 import ComputerOutline from './computer-outline'
 import ContainerExportOutline from './container-export-outline'
 import ContainerImportOutline from './container-import-outline'
@@ -62,7 +66,11 @@ export {
   ApartmentOutline,
   ArrearsCircleColours,
   BankCardCircleColours,
+  BoardIndexOutline,
+  BoardLineOutline,
+  BoardPieOutline,
   CheckRecordsOutline,
+  ComputerIndexOutline,
   ComputerOutline,
   ContainerExportOutline,
   ContainerImportOutline,
@@ -123,7 +131,11 @@ export default {
   ApartmentOutline,
   ArrearsCircleColours,
   BankCardCircleColours,
+  BoardIndexOutline,
+  BoardLineOutline,
+  BoardPieOutline,
   CheckRecordsOutline,
+  ComputerIndexOutline,
   ComputerOutline,
   ContainerExportOutline,
   ContainerImportOutline,

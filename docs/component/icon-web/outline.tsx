@@ -2,7 +2,11 @@ import React from 'react'
 
 import {
   ApartmentOutline,
+  BoardIndexOutline,
+  BoardLineOutline,
+  BoardPieOutline,
   CheckRecordsOutline,
+  ComputerIndexOutline,
   ComputerOutline,
   ContainerExportOutline,
   ContainerImportOutline,
@@ -57,7 +61,11 @@ import Code from '../icon/code'
 
 const icons: { name: string; Component: any }[] = [
   { name: 'ApartmentOutline', Component: ApartmentOutline },
+  { name: 'BoardIndexOutline', Component: BoardIndexOutline },
+  { name: 'BoardLineOutline', Component: BoardLineOutline },
+  { name: 'BoardPieOutline', Component: BoardPieOutline },
   { name: 'CheckRecordsOutline', Component: CheckRecordsOutline },
+  { name: 'ComputerIndexOutline', Component: ComputerIndexOutline },
   { name: 'ComputerOutline', Component: ComputerOutline },
   { name: 'ContainerExportOutline', Component: ContainerExportOutline },
   { name: 'ContainerImportOutline', Component: ContainerImportOutline },
