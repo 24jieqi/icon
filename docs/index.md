@@ -7,4 +7,5 @@ hero:
     - text: 快速上手 →
       link: /guide/quickstart
 # footer: Copyright © 2021-present<br />Powered by [全果链研发团队](https://github.com/hjfruit).
+footer: 相关资源：[小暑](https://hjfruit.github.io/xiaoshu-doc/)、[白露](https://hjfruit.github.io/bailu-doc/)、[寒露](https://hjfruit.github.io/hanlu-doc/)、[SVG 图标库](https://hjfruit.github.io/icon-doc/)、[腊八](https://hjfruit.github.io/laba-doc/)、[工具集](https://hjfruit.github.io/utils/)
 ---
