@@ -1,10 +1,13 @@
 import AlipayColours from './alipay-colours'
+import Apartment2Outline from './apartment2-outline'
 import ApartmentOutline from './apartment-outline'
 import ArrearsCircleColours from './arrears-circle-colours'
 import BankCardCircleColours from './bank-card-circle-colours'
 import BoardIndexOutline from './board-index-outline'
 import BoardLineOutline from './board-line-outline'
 import BoardPieOutline from './board-pie-outline'
+import BookOutline from './book-outline'
+import BucketOutline from './bucket-outline'
 import CheckRecordsOutline from './check-records-outline'
 import ComputerIndexOutline from './computer-index-outline'
 import ComputerOutline from './computer-outline'
@@ -12,6 +15,7 @@ import ContainerExportOutline from './container-export-outline'
 import ContainerImportOutline from './container-import-outline'
 import ContainerOutline from './container-outline'
 import ContainerSettingOutline from './container-setting-outline'
+import ContentIndicatorsOutline from './content-indicators-outline'
 import CrossOutline from './cross-outline'
 import DashboardOutline from './dashboard-outline'
 import DataReportOutline from './data-report-outline'
@@ -47,6 +51,8 @@ import PaletteYuanOutline from './palette-yuan-outline'
 import PlusCircleOutline from './plus-circle-outline'
 import ReceiptOutline from './receipt-outline'
 import ScreeningOutline from './screening-outline'
+import ShopOutline from './shop-outline'
+import ShoppingBagOutline from './shopping-bag-outline'
 import SpeedOutline from './speed-outline'
 import SuccessCircleColours from './success-circle-colours'
 import SuccessFill from './success-fill'
@@ -54,7 +60,9 @@ import SuccessOutline from './success-outline'
 import TargetOutline from './target-outline'
 import TaskPanelOutline from './task-panel-outline'
 import TeamOutline from './team-outline'
+import ThirdpartnarOutline from './thirdpartnar-outline'
 import TransferCircleColours from './transfer-circle-colours'
+import UserSettingOutline from './user-setting-outline'
 import WeChatPayColours from './we-chat-pay-colours'
 import YuanCircleColours from './yuan-circle-colours'
 import YuanCircleOutline from './yuan-circle-outline'
@@ -63,12 +71,15 @@ import YuanWadOutline from './yuan-wad-outline'
 
 export {
   AlipayColours,
+  Apartment2Outline,
   ApartmentOutline,
   ArrearsCircleColours,
   BankCardCircleColours,
   BoardIndexOutline,
   BoardLineOutline,
   BoardPieOutline,
+  BookOutline,
+  BucketOutline,
   CheckRecordsOutline,
   ComputerIndexOutline,
   ComputerOutline,
@@ -76,6 +87,7 @@ export {
   ContainerImportOutline,
   ContainerOutline,
   ContainerSettingOutline,
+  ContentIndicatorsOutline,
   CrossOutline,
   DashboardOutline,
   DataReportOutline,
@@ -111,6 +123,8 @@ export {
   PlusCircleOutline,
   ReceiptOutline,
   ScreeningOutline,
+  ShopOutline,
+  ShoppingBagOutline,
   SpeedOutline,
   SuccessCircleColours,
   SuccessFill,
@@ -118,7 +132,9 @@ export {
   TargetOutline,
   TaskPanelOutline,
   TeamOutline,
+  ThirdpartnarOutline,
   TransferCircleColours,
+  UserSettingOutline,
   WeChatPayColours,
   YuanCircleColours,
   YuanCircleOutline,
@@ -128,12 +144,15 @@ export {
 
 export default {
   AlipayColours,
+  Apartment2Outline,
   ApartmentOutline,
   ArrearsCircleColours,
   BankCardCircleColours,
   BoardIndexOutline,
   BoardLineOutline,
   BoardPieOutline,
+  BookOutline,
+  BucketOutline,
   CheckRecordsOutline,
   ComputerIndexOutline,
   ComputerOutline,
@@ -141,6 +160,7 @@ export default {
   ContainerImportOutline,
   ContainerOutline,
   ContainerSettingOutline,
+  ContentIndicatorsOutline,
   CrossOutline,
   DashboardOutline,
   DataReportOutline,
@@ -176,6 +196,8 @@ export default {
   PlusCircleOutline,
   ReceiptOutline,
   ScreeningOutline,
+  ShopOutline,
+  ShoppingBagOutline,
   SpeedOutline,
   SuccessCircleColours,
   SuccessFill,
@@ -183,7 +205,9 @@ export default {
   TargetOutline,
   TaskPanelOutline,
   TeamOutline,
+  ThirdpartnarOutline,
   TransferCircleColours,
+  UserSettingOutline,
   WeChatPayColours,
   YuanCircleColours,
   YuanCircleOutline,
