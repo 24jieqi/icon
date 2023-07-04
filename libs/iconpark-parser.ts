@@ -9,6 +9,7 @@ import type { ComponentItem } from './gen/entry'
 import { genEntry } from './gen/entry.js'
 import { genReactNative } from './gen/react-native.js'
 import { genReact } from './gen/react.js'
+import { genTaro } from './gen/taro.js'
 import { string2CamelCase } from './helper.js'
 import type { GenCodeConfig } from './interface'
 import { log } from './log.js'
@@ -29,7 +30,7 @@ const __dirname = path.dirname(__filename)
 
 const genCode = async (
   id: string,
-  type: 'app' | 'web',
+  type: 'app' | 'web' | 'taro',
   { output, removeIgnore, genCodeFN, name, currentColor }: GenCodeConfig,
 ) => {
   const data = await fetchXml(
@@ -148,10 +149,23 @@ const genWebCode = () => {
   })
 }
 
+const genTaroCode = () => {
+  genCode('svg_26753_34.61699fdf22eebfc2e2282824b8e451d3', 'taro', {
+    output: path.join(__dirname, '../packages/icons-taro/src'),
+    removeIgnore: ['gen.tsx'],
+    genCodeFN: genTaro,
+    name: '@fruits-chain/icons-taro',
+  })
+}
+
 if (argsObject.type === 'web') {
   genWebCode()
 }
 
 if (argsObject.type === 'app') {
   genAppCode()
+}
+
+if (argsObject.type === 'taro') {
+  genTaroCode()
 }

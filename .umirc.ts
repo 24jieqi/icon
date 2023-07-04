@@ -1,5 +1,6 @@
 import type WebpackChain from 'webpack-chain'
 import { defineConfig } from 'dumi'
+import path from 'path'
 
 const repo = process.env.PUBLIC_PATH || ''
 
@@ -48,4 +49,7 @@ export default defineConfig({
       'antd',
     ],
   ],
+  alias: {
+    '@tarojs/components': path.resolve(__dirname, './mock/taro.tsx'),
+  },
 })

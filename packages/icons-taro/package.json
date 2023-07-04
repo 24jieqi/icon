@@ -1,0 +1,29 @@
+{
+  "name": "@fruits-chain/icons-taro",
+  "version": "0.0.0",
+  "description": "🎨 Taro Icon",
+  "author": "LING_ZI_QING <onlylingstudio@gmail.com>",
+  "homepage": "https://github.com/hjfruit/icon#readme",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "directories": {},
+  "files": [
+    "es",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjfruit/icon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hjfruit/icon/issues"
+  },
+  "peerDependencies": {
+    "@tarojs/components": "*"
+  }
+}
