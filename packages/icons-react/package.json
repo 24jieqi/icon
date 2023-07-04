@@ -10,7 +10,6 @@
   "types": "es/index.d.ts",
   "directories": {},
   "files": [
-    "src",
     "es",
     "lib"
   ],
