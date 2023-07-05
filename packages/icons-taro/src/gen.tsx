@@ -62,6 +62,7 @@ export const genIcon = (render: IconRender): React.FC<IconCommonProps> => {
           style={{
             position: 'relative',
             display: 'inline-block',
+            flexShrink: 0,
             width: size,
             height: size,
             backgroundImage: `url('data:image/svg+xml, ${encodeURIComponent(
