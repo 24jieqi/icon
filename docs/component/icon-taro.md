@@ -14,12 +14,11 @@ nav:
  * defaultShowCode: true
  */
 import React from 'react'
-import { View } from 'react-native'
 import { ArrowDownOutline } from '@fruits-chain/icons-taro'
 
 export default () => {
   return (
-    <View style={{ flexDirection: 'row' }}>
+    <>
       <ArrowDownOutline
         color="#987"
         size={40}
@@ -53,7 +52,7 @@ export default () => {
           console.log('onClick4')
         }}
       />
-    </View>
+    </>
   )
 }
 ```
