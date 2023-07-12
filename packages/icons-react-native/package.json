@@ -28,7 +28,7 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-svg": "^12.4.1"
+    "react-native-svg": ">=12.4.1"
   },
   "dependencies": {
     "@babel/runtime": "*",
