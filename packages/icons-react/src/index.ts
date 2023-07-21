@@ -6,9 +6,12 @@ import BankCardCircleColours from './bank-card-circle-colours'
 import BoardIndexOutline from './board-index-outline'
 import BoardLineOutline from './board-line-outline'
 import BoardPieOutline from './board-pie-outline'
+import BoardYuanOutline from './board-yuan-outline'
 import BookOutline from './book-outline'
 import BucketOutline from './bucket-outline'
 import CheckRecordsOutline from './check-records-outline'
+import CheckSheetYuanOutline from './check-sheet-yuan-outline'
+import ComputerAiOutline from './computer-ai-outline'
 import ComputerIndexOutline from './computer-index-outline'
 import ComputerOutline from './computer-outline'
 import ContainerExportOutline from './container-export-outline'
@@ -78,9 +81,12 @@ export {
   BoardIndexOutline,
   BoardLineOutline,
   BoardPieOutline,
+  BoardYuanOutline,
   BookOutline,
   BucketOutline,
   CheckRecordsOutline,
+  CheckSheetYuanOutline,
+  ComputerAiOutline,
   ComputerIndexOutline,
   ComputerOutline,
   ContainerExportOutline,
@@ -151,9 +157,12 @@ export default {
   BoardIndexOutline,
   BoardLineOutline,
   BoardPieOutline,
+  BoardYuanOutline,
   BookOutline,
   BucketOutline,
   CheckRecordsOutline,
+  CheckSheetYuanOutline,
+  ComputerAiOutline,
   ComputerIndexOutline,
   ComputerOutline,
   ContainerExportOutline,
