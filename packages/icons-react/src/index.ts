@@ -1,4 +1,5 @@
 import AlipayColours from './alipay-colours'
+import AnalysisOutline from './analysis-outline'
 import Apartment2Outline from './apartment2-outline'
 import ApartmentOutline from './apartment-outline'
 import ArrearsCircleColours from './arrears-circle-colours'
@@ -74,6 +75,7 @@ import YuanWadOutline from './yuan-wad-outline'
 
 export {
   AlipayColours,
+  AnalysisOutline,
   Apartment2Outline,
   ApartmentOutline,
   ArrearsCircleColours,
@@ -150,6 +152,7 @@ export {
 
 export default {
   AlipayColours,
+  AnalysisOutline,
   Apartment2Outline,
   ApartmentOutline,
   ArrearsCircleColours,

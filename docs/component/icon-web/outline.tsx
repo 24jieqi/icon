@@ -1,6 +1,7 @@
 import React from 'react'
 
 import {
+  AnalysisOutline,
   Apartment2Outline,
   ApartmentOutline,
   BoardIndexOutline,
@@ -71,6 +72,7 @@ import {
 import Code from '../icon/code'
 
 const icons: { name: string; Component: any }[] = [
+  { name: 'AnalysisOutline', Component: AnalysisOutline },
   { name: 'Apartment2Outline', Component: Apartment2Outline },
   { name: 'ApartmentOutline', Component: ApartmentOutline },
   { name: 'BoardIndexOutline', Component: BoardIndexOutline },
