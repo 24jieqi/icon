@@ -15,6 +15,7 @@ import CheckSheetYuanOutline from './check-sheet-yuan-outline'
 import ComputerAiOutline from './computer-ai-outline'
 import ComputerIndexOutline from './computer-index-outline'
 import ComputerOutline from './computer-outline'
+import ComputerTemperatureOutline from './computer-temperature-outline'
 import ContainerExportOutline from './container-export-outline'
 import ContainerImportOutline from './container-import-outline'
 import ContainerOutline from './container-outline'
@@ -41,6 +42,7 @@ import FileTextOutline from './file-text-outline'
 import FileTransportOutline from './file-transport-outline'
 import FileUserOutline from './file-user-outline'
 import FileYuanOutline from './file-yuan-outline'
+import FrameOutline from './frame-outline'
 import FruitStorageOutline from './fruit-storage-outline'
 import HomeOutline from './home-outline'
 import HomeSettingOutline from './home-setting-outline'
@@ -91,6 +93,7 @@ export {
   ComputerAiOutline,
   ComputerIndexOutline,
   ComputerOutline,
+  ComputerTemperatureOutline,
   ContainerExportOutline,
   ContainerImportOutline,
   ContainerOutline,
@@ -117,6 +120,7 @@ export {
   FileTransportOutline,
   FileUserOutline,
   FileYuanOutline,
+  FrameOutline,
   FruitStorageOutline,
   HomeOutline,
   HomeSettingOutline,
@@ -168,6 +172,7 @@ export default {
   ComputerAiOutline,
   ComputerIndexOutline,
   ComputerOutline,
+  ComputerTemperatureOutline,
   ContainerExportOutline,
   ContainerImportOutline,
   ContainerOutline,
@@ -194,6 +199,7 @@ export default {
   FileTransportOutline,
   FileUserOutline,
   FileYuanOutline,
+  FrameOutline,
   FruitStorageOutline,
   HomeOutline,
   HomeSettingOutline,
