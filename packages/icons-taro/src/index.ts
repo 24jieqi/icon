@@ -8,6 +8,7 @@ import BoardOutline from './board-outline'
 import CertificateFill from './certificate-fill'
 import CertificateOutline from './certificate-outline'
 import ChainOutline from './chain-outline'
+import CircleOutline from './circle-outline'
 import CopyOutline from './copy-outline'
 import CorrectOutline from './correct-outline'
 import CrossFill from './cross-fill'
@@ -44,6 +45,7 @@ export {
   CertificateFill,
   CertificateOutline,
   ChainOutline,
+  CircleOutline,
   CopyOutline,
   CorrectOutline,
   CrossFill,
@@ -81,6 +83,7 @@ export default {
   CertificateFill,
   CertificateOutline,
   ChainOutline,
+  CircleOutline,
   CopyOutline,
   CorrectOutline,
   CrossFill,
