@@ -32,6 +32,7 @@ import SuccessFill from './success-fill'
 import SwapOutline from './swap-outline'
 import TelOutline from './tel-outline'
 import TimeFill from './time-fill'
+import VerticalAlignTopOutline from './vertical-align-top-outline'
 import YuanCircleFill from './yuan-circle-fill'
 
 export {
@@ -69,6 +70,7 @@ export {
   SwapOutline,
   TelOutline,
   TimeFill,
+  VerticalAlignTopOutline,
   YuanCircleFill,
 }
 
@@ -107,5 +109,6 @@ export default {
   SwapOutline,
   TelOutline,
   TimeFill,
+  VerticalAlignTopOutline,
   YuanCircleFill,
 } as const

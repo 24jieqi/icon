@@ -25,6 +25,7 @@ import {
   ShopOutline,
   SwapOutline,
   TelOutline,
+  VerticalAlignTopOutline,
 } from '@fruits-chain/icons-taro'
 
 import Code from '../icon/code'
@@ -54,6 +55,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'ShopOutline', Component: ShopOutline },
   { name: 'SwapOutline', Component: SwapOutline },
   { name: 'TelOutline', Component: TelOutline },
+  { name: 'VerticalAlignTopOutline', Component: VerticalAlignTopOutline },
 ]
 
 const Outline: React.FC = () => {
