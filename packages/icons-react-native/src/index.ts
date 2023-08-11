@@ -21,6 +21,7 @@ import CirclePlusOutline from './circle-plus-outline'
 import CircleQiColours from './circle-qi-colours'
 import CircleQianColours from './circle-qian-colours'
 import CircleXieColours from './circle-xie-colours'
+import CircleYuColours from './circle-yu-colours'
 import CircleZhongColours from './circle-zhong-colours'
 import CircleZhuanColours from './circle-zhuan-colours'
 import CircleZhuangColours from './circle-zhuang-colours'
@@ -121,6 +122,7 @@ export {
   CircleQiColours,
   CircleQianColours,
   CircleXieColours,
+  CircleYuColours,
   CircleZhongColours,
   CircleZhuanColours,
   CircleZhuangColours,
@@ -222,6 +224,7 @@ export default {
   CircleQiColours,
   CircleQianColours,
   CircleXieColours,
+  CircleYuColours,
   CircleZhongColours,
   CircleZhuanColours,
   CircleZhuangColours,
