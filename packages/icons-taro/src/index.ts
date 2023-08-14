@@ -1,3 +1,4 @@
+import AlipayColours from './alipay-colours'
 import ArrowDownFill from './arrow-down-fill'
 import ArrowDownOutline from './arrow-down-outline'
 import ArrowLeftOutline from './arrow-left-outline'
@@ -33,9 +34,12 @@ import SwapOutline from './swap-outline'
 import TelOutline from './tel-outline'
 import TimeFill from './time-fill'
 import VerticalAlignTopOutline from './vertical-align-top-outline'
+import WeChatPayColours from './we-chat-pay-colours'
+import YuanCircleColours from './yuan-circle-colours'
 import YuanCircleFill from './yuan-circle-fill'
 
 export {
+  AlipayColours,
   ArrowDownFill,
   ArrowDownOutline,
   ArrowLeftOutline,
@@ -71,10 +75,13 @@ export {
   TelOutline,
   TimeFill,
   VerticalAlignTopOutline,
+  WeChatPayColours,
+  YuanCircleColours,
   YuanCircleFill,
 }
 
 export default {
+  AlipayColours,
   ArrowDownFill,
   ArrowDownOutline,
   ArrowLeftOutline,
@@ -110,5 +117,7 @@ export default {
   TelOutline,
   TimeFill,
   VerticalAlignTopOutline,
+  WeChatPayColours,
+  YuanCircleColours,
   YuanCircleFill,
 } as const

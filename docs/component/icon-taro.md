@@ -73,4 +73,4 @@ export default () => {
 
 > 支持 `size` 自定义属性。
 
-<!-- <code compact inline src="./icon-app/colours.tsx" /> -->
+<code compact inline src="./icon-taro/colours.tsx" />

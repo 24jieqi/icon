@@ -150,7 +150,7 @@ const genWebCode = () => {
 }
 
 const genTaroCode = () => {
-  genCode('svg_26753_36.b2406d6829048ef06e7530514c9d3476', 'taro', {
+  genCode('svg_26753_39.aa776f23a166ae191acec702ed0c4060', 'taro', {
     output: path.join(__dirname, '../packages/icons-taro/src'),
     removeIgnore: ['gen.tsx'],
     genCodeFN: genTaro,
