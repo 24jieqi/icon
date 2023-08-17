@@ -3,6 +3,8 @@ import AnalysisOutline from './analysis-outline'
 import Apartment2Outline from './apartment2-outline'
 import ApartmentOutline from './apartment-outline'
 import ArrearsCircleColours from './arrears-circle-colours'
+import ArrowDownRectSettingOutline from './arrow-down-rect-setting-outline'
+import ArrowUpRectSettingOutline from './arrow-up-rect-setting-outline'
 import BankCardCircleColours from './bank-card-circle-colours'
 import BoardIndexOutline from './board-index-outline'
 import BoardLineOutline from './board-line-outline'
@@ -44,6 +46,7 @@ import FileUserOutline from './file-user-outline'
 import FileYuanOutline from './file-yuan-outline'
 import FrameOutline from './frame-outline'
 import FruitStorageOutline from './fruit-storage-outline'
+import HandCoinOutline from './hand-coin-outline'
 import HomeOutline from './home-outline'
 import HomeSettingOutline from './home-setting-outline'
 import ImageOpenOutline from './image-open-outline'
@@ -56,6 +59,7 @@ import PageRecordOutline from './page-record-outline'
 import PaletteYuanOutline from './palette-yuan-outline'
 import PlusCircleOutline from './plus-circle-outline'
 import ReceiptOutline from './receipt-outline'
+import RecordSettingOutline from './record-setting-outline'
 import ScreeningOutline from './screening-outline'
 import ShopOutline from './shop-outline'
 import ShoppingBagOutline from './shopping-bag-outline'
@@ -68,10 +72,12 @@ import TaskPanelOutline from './task-panel-outline'
 import TeamOutline from './team-outline'
 import ThirdpartnarOutline from './thirdpartnar-outline'
 import TransferCircleColours from './transfer-circle-colours'
+import UserRectSettingOutline from './user-rect-setting-outline'
 import UserSettingOutline from './user-setting-outline'
 import WeChatPayColours from './we-chat-pay-colours'
 import YuanCircleColours from './yuan-circle-colours'
 import YuanCircleOutline from './yuan-circle-outline'
+import YuanCircleSettingOutline from './yuan-circle-setting-outline'
 import YuanImportOutline from './yuan-import-outline'
 import YuanWadOutline from './yuan-wad-outline'
 
@@ -81,6 +87,8 @@ export {
   Apartment2Outline,
   ApartmentOutline,
   ArrearsCircleColours,
+  ArrowDownRectSettingOutline,
+  ArrowUpRectSettingOutline,
   BankCardCircleColours,
   BoardIndexOutline,
   BoardLineOutline,
@@ -122,6 +130,7 @@ export {
   FileYuanOutline,
   FrameOutline,
   FruitStorageOutline,
+  HandCoinOutline,
   HomeOutline,
   HomeSettingOutline,
   ImageOpenOutline,
@@ -134,6 +143,7 @@ export {
   PaletteYuanOutline,
   PlusCircleOutline,
   ReceiptOutline,
+  RecordSettingOutline,
   ScreeningOutline,
   ShopOutline,
   ShoppingBagOutline,
@@ -146,10 +156,12 @@ export {
   TeamOutline,
   ThirdpartnarOutline,
   TransferCircleColours,
+  UserRectSettingOutline,
   UserSettingOutline,
   WeChatPayColours,
   YuanCircleColours,
   YuanCircleOutline,
+  YuanCircleSettingOutline,
   YuanImportOutline,
   YuanWadOutline,
 }
@@ -160,6 +172,8 @@ export default {
   Apartment2Outline,
   ApartmentOutline,
   ArrearsCircleColours,
+  ArrowDownRectSettingOutline,
+  ArrowUpRectSettingOutline,
   BankCardCircleColours,
   BoardIndexOutline,
   BoardLineOutline,
@@ -201,6 +215,7 @@ export default {
   FileYuanOutline,
   FrameOutline,
   FruitStorageOutline,
+  HandCoinOutline,
   HomeOutline,
   HomeSettingOutline,
   ImageOpenOutline,
@@ -213,6 +228,7 @@ export default {
   PaletteYuanOutline,
   PlusCircleOutline,
   ReceiptOutline,
+  RecordSettingOutline,
   ScreeningOutline,
   ShopOutline,
   ShoppingBagOutline,
@@ -225,10 +241,12 @@ export default {
   TeamOutline,
   ThirdpartnarOutline,
   TransferCircleColours,
+  UserRectSettingOutline,
   UserSettingOutline,
   WeChatPayColours,
   YuanCircleColours,
   YuanCircleOutline,
+  YuanCircleSettingOutline,
   YuanImportOutline,
   YuanWadOutline,
 } as const
