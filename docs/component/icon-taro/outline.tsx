@@ -25,6 +25,7 @@ import {
   ShopOutline,
   SwapOutline,
   TelOutline,
+  UserOutline,
   VerticalAlignTopOutline,
 } from '@fruits-chain/icons-taro'
 
@@ -55,6 +56,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'ShopOutline', Component: ShopOutline },
   { name: 'SwapOutline', Component: SwapOutline },
   { name: 'TelOutline', Component: TelOutline },
+  { name: 'UserOutline', Component: UserOutline },
   { name: 'VerticalAlignTopOutline', Component: VerticalAlignTopOutline },
 ]
 
