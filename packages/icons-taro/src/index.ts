@@ -35,6 +35,7 @@ import TelOutline from './tel-outline'
 import TimeFill from './time-fill'
 import UserOutline from './user-outline'
 import VerticalAlignTopOutline from './vertical-align-top-outline'
+import WarningFill from './warning-fill'
 import WeChatPayColours from './we-chat-pay-colours'
 import YuanCircleColours from './yuan-circle-colours'
 import YuanCircleFill from './yuan-circle-fill'
@@ -77,6 +78,7 @@ export {
   TimeFill,
   UserOutline,
   VerticalAlignTopOutline,
+  WarningFill,
   WeChatPayColours,
   YuanCircleColours,
   YuanCircleFill,
@@ -120,6 +122,7 @@ export default {
   TimeFill,
   UserOutline,
   VerticalAlignTopOutline,
+  WarningFill,
   WeChatPayColours,
   YuanCircleColours,
   YuanCircleFill,

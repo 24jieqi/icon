@@ -11,6 +11,7 @@ import {
   SafetyFill,
   SuccessFill,
   TimeFill,
+  WarningFill,
   YuanCircleFill,
 } from '@fruits-chain/icons-taro'
 
@@ -27,6 +28,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'SafetyFill', Component: SafetyFill },
   { name: 'SuccessFill', Component: SuccessFill },
   { name: 'TimeFill', Component: TimeFill },
+  { name: 'WarningFill', Component: WarningFill },
   { name: 'YuanCircleFill', Component: YuanCircleFill },
 ]
 
