@@ -46,7 +46,9 @@ import FileUserOutline from './file-user-outline'
 import FileYuanOutline from './file-yuan-outline'
 import FrameOutline from './frame-outline'
 import FruitStorageOutline from './fruit-storage-outline'
+import HandArrowUpOutline from './hand-arrow-up-outline'
 import HandCoinOutline from './hand-coin-outline'
+import HandDoubleDownOutline from './hand-double-down-outline'
 import HomeOutline from './home-outline'
 import HomeSettingOutline from './home-setting-outline'
 import ImageOpenOutline from './image-open-outline'
@@ -130,7 +132,9 @@ export {
   FileYuanOutline,
   FrameOutline,
   FruitStorageOutline,
+  HandArrowUpOutline,
   HandCoinOutline,
+  HandDoubleDownOutline,
   HomeOutline,
   HomeSettingOutline,
   ImageOpenOutline,
@@ -215,7 +219,9 @@ export default {
   FileYuanOutline,
   FrameOutline,
   FruitStorageOutline,
+  HandArrowUpOutline,
   HandCoinOutline,
+  HandDoubleDownOutline,
   HomeOutline,
   HomeSettingOutline,
   ImageOpenOutline,
