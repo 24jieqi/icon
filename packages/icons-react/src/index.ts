@@ -3,6 +3,7 @@ import AnalysisOutline from './analysis-outline'
 import Apartment2Outline from './apartment2-outline'
 import ApartmentOutline from './apartment-outline'
 import ArrearsCircleColours from './arrears-circle-colours'
+import ArrowDownRectDextroversionOutline from './arrow-down-rect-dextroversion-outline'
 import ArrowDownRectSettingOutline from './arrow-down-rect-setting-outline'
 import ArrowUpRectSettingOutline from './arrow-up-rect-setting-outline'
 import BankCardCircleColours from './bank-card-circle-colours'
@@ -15,6 +16,7 @@ import BucketOutline from './bucket-outline'
 import CheckRecordsOutline from './check-records-outline'
 import CheckSheetYuanOutline from './check-sheet-yuan-outline'
 import ComputerAiOutline from './computer-ai-outline'
+import ComputerDataOutline from './computer-data-outline'
 import ComputerIndexOutline from './computer-index-outline'
 import ComputerOutline from './computer-outline'
 import ComputerTemperatureOutline from './computer-temperature-outline'
@@ -27,6 +29,8 @@ import CrossOutline from './cross-outline'
 import DashboardOutline from './dashboard-outline'
 import DataReportOutline from './data-report-outline'
 import DisplayOutline from './display-outline'
+import DoubleUpRectDextroversionOutline from './double-up-rect-dextroversion-outline'
+import DoubleUpRectSettingOutline from './double-up-rect-setting-outline'
 import DraftsOutline from './drafts-outline'
 import DrawerFoldOutline from './drawer-fold-outline'
 import DrawerUnfoldOutline from './drawer-unfold-outline'
@@ -47,6 +51,7 @@ import FileYuanOutline from './file-yuan-outline'
 import FrameOutline from './frame-outline'
 import FruitStorageOutline from './fruit-storage-outline'
 import HandArrowUpOutline from './hand-arrow-up-outline'
+import HandCoinInversionOutline from './hand-coin-inversion-outline'
 import HandCoinOutline from './hand-coin-outline'
 import HandDoubleDownOutline from './hand-double-down-outline'
 import HomeOutline from './home-outline'
@@ -59,6 +64,7 @@ import MoreCircleOutline from './more-circle-outline'
 import OperatorOutline from './operator-outline'
 import PageRecordOutline from './page-record-outline'
 import PaletteYuanOutline from './palette-yuan-outline'
+import PauseRectSettingOutline from './pause-rect-setting-outline'
 import PlusCircleOutline from './plus-circle-outline'
 import ReceiptOutline from './receipt-outline'
 import RecordSettingOutline from './record-setting-outline'
@@ -69,6 +75,7 @@ import SpeedOutline from './speed-outline'
 import SuccessCircleColours from './success-circle-colours'
 import SuccessFill from './success-fill'
 import SuccessOutline from './success-outline'
+import SwapRectSettingOutline from './swap-rect-setting-outline'
 import TargetOutline from './target-outline'
 import TaskPanelOutline from './task-panel-outline'
 import TeamOutline from './team-outline'
@@ -89,6 +96,7 @@ export {
   Apartment2Outline,
   ApartmentOutline,
   ArrearsCircleColours,
+  ArrowDownRectDextroversionOutline,
   ArrowDownRectSettingOutline,
   ArrowUpRectSettingOutline,
   BankCardCircleColours,
@@ -101,6 +109,7 @@ export {
   CheckRecordsOutline,
   CheckSheetYuanOutline,
   ComputerAiOutline,
+  ComputerDataOutline,
   ComputerIndexOutline,
   ComputerOutline,
   ComputerTemperatureOutline,
@@ -113,6 +122,8 @@ export {
   DashboardOutline,
   DataReportOutline,
   DisplayOutline,
+  DoubleUpRectDextroversionOutline,
+  DoubleUpRectSettingOutline,
   DraftsOutline,
   DrawerFoldOutline,
   DrawerUnfoldOutline,
@@ -133,6 +144,7 @@ export {
   FrameOutline,
   FruitStorageOutline,
   HandArrowUpOutline,
+  HandCoinInversionOutline,
   HandCoinOutline,
   HandDoubleDownOutline,
   HomeOutline,
@@ -145,6 +157,7 @@ export {
   OperatorOutline,
   PageRecordOutline,
   PaletteYuanOutline,
+  PauseRectSettingOutline,
   PlusCircleOutline,
   ReceiptOutline,
   RecordSettingOutline,
@@ -155,6 +168,7 @@ export {
   SuccessCircleColours,
   SuccessFill,
   SuccessOutline,
+  SwapRectSettingOutline,
   TargetOutline,
   TaskPanelOutline,
   TeamOutline,
@@ -176,6 +190,7 @@ export default {
   Apartment2Outline,
   ApartmentOutline,
   ArrearsCircleColours,
+  ArrowDownRectDextroversionOutline,
   ArrowDownRectSettingOutline,
   ArrowUpRectSettingOutline,
   BankCardCircleColours,
@@ -188,6 +203,7 @@ export default {
   CheckRecordsOutline,
   CheckSheetYuanOutline,
   ComputerAiOutline,
+  ComputerDataOutline,
   ComputerIndexOutline,
   ComputerOutline,
   ComputerTemperatureOutline,
@@ -200,6 +216,8 @@ export default {
   DashboardOutline,
   DataReportOutline,
   DisplayOutline,
+  DoubleUpRectDextroversionOutline,
+  DoubleUpRectSettingOutline,
   DraftsOutline,
   DrawerFoldOutline,
   DrawerUnfoldOutline,
@@ -220,6 +238,7 @@ export default {
   FrameOutline,
   FruitStorageOutline,
   HandArrowUpOutline,
+  HandCoinInversionOutline,
   HandCoinOutline,
   HandDoubleDownOutline,
   HomeOutline,
@@ -232,6 +251,7 @@ export default {
   OperatorOutline,
   PageRecordOutline,
   PaletteYuanOutline,
+  PauseRectSettingOutline,
   PlusCircleOutline,
   ReceiptOutline,
   RecordSettingOutline,
@@ -242,6 +262,7 @@ export default {
   SuccessCircleColours,
   SuccessFill,
   SuccessOutline,
+  SwapRectSettingOutline,
   TargetOutline,
   TaskPanelOutline,
   TeamOutline,
