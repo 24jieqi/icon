@@ -3,6 +3,7 @@ import React from 'react'
 import {
   ArrowDownFill,
   ArrowUpFill,
+  CameraFill,
   CertificateFill,
   CrossFill,
   FilterFill,
@@ -20,6 +21,7 @@ import Code from '../icon/code'
 const icons: { name: string; Component: any }[] = [
   { name: 'ArrowDownFill', Component: ArrowDownFill },
   { name: 'ArrowUpFill', Component: ArrowUpFill },
+  { name: 'CameraFill', Component: CameraFill },
   { name: 'CertificateFill', Component: CertificateFill },
   { name: 'CrossFill', Component: CrossFill },
   { name: 'FilterFill', Component: FilterFill },

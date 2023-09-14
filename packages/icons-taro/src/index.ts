@@ -6,6 +6,7 @@ import ArrowRightOutline from './arrow-right-outline'
 import ArrowUpFill from './arrow-up-fill'
 import ArrowUpOutline from './arrow-up-outline'
 import BoardOutline from './board-outline'
+import CameraFill from './camera-fill'
 import CertificateFill from './certificate-fill'
 import CertificateOutline from './certificate-outline'
 import ChainOutline from './chain-outline'
@@ -49,6 +50,7 @@ export {
   ArrowUpFill,
   ArrowUpOutline,
   BoardOutline,
+  CameraFill,
   CertificateFill,
   CertificateOutline,
   ChainOutline,
@@ -93,6 +95,7 @@ export default {
   ArrowUpFill,
   ArrowUpOutline,
   BoardOutline,
+  CameraFill,
   CertificateFill,
   CertificateOutline,
   ChainOutline,
