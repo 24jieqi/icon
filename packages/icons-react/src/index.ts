@@ -2,6 +2,7 @@ import AlipayColours from './alipay-colours'
 import AnalysisOutline from './analysis-outline'
 import Apartment2Outline from './apartment2-outline'
 import ApartmentOutline from './apartment-outline'
+import ArcRectSettingOutline from './arc-rect-setting-outline'
 import ArrearsCircleColours from './arrears-circle-colours'
 import ArrowDownRectDextroversionOutline from './arrow-down-rect-dextroversion-outline'
 import ArrowDownRectSettingOutline from './arrow-down-rect-setting-outline'
@@ -11,7 +12,9 @@ import BoardIndexOutline from './board-index-outline'
 import BoardLineOutline from './board-line-outline'
 import BoardPieOutline from './board-pie-outline'
 import BoardYuanOutline from './board-yuan-outline'
+import BoatAnchorRectSettingOutline from './boat-anchor-rect-setting-outline'
 import BookOutline from './book-outline'
+import BookmarkRectSettingOutline from './bookmark-rect-setting-outline'
 import BucketOutline from './bucket-outline'
 import CheckRecordsOutline from './check-records-outline'
 import CheckSheetYuanOutline from './check-sheet-yuan-outline'
@@ -29,6 +32,7 @@ import CrossOutline from './cross-outline'
 import DashboardOutline from './dashboard-outline'
 import DataReportOutline from './data-report-outline'
 import DisplayOutline from './display-outline'
+import DoubleArrowRectSettingOutline from './double-arrow-rect-setting-outline'
 import DoubleUpRectDextroversionOutline from './double-up-rect-dextroversion-outline'
 import DoubleUpRectSettingOutline from './double-up-rect-setting-outline'
 import DraftsOutline from './drafts-outline'
@@ -61,6 +65,7 @@ import ImageStowOutline from './image-stow-outline'
 import InventoryRecordsOutline from './inventory-records-outline'
 import MobilePhoneOutline from './mobile-phone-outline'
 import MoreCircleOutline from './more-circle-outline'
+import MultilayerCylinderSettingOutline from './multilayer-cylinder-setting-outline'
 import OperatorOutline from './operator-outline'
 import PageRecordOutline from './page-record-outline'
 import PaletteYuanOutline from './palette-yuan-outline'
@@ -69,6 +74,7 @@ import PlusCircleOutline from './plus-circle-outline'
 import ReceiptOutline from './receipt-outline'
 import RecordSettingOutline from './record-setting-outline'
 import ScreeningOutline from './screening-outline'
+import SealRectSettingOutline from './seal-rect-setting-outline'
 import ShopOutline from './shop-outline'
 import ShoppingBagOutline from './shopping-bag-outline'
 import SpeedOutline from './speed-outline'
@@ -95,6 +101,7 @@ export {
   AnalysisOutline,
   Apartment2Outline,
   ApartmentOutline,
+  ArcRectSettingOutline,
   ArrearsCircleColours,
   ArrowDownRectDextroversionOutline,
   ArrowDownRectSettingOutline,
@@ -104,7 +111,9 @@ export {
   BoardLineOutline,
   BoardPieOutline,
   BoardYuanOutline,
+  BoatAnchorRectSettingOutline,
   BookOutline,
+  BookmarkRectSettingOutline,
   BucketOutline,
   CheckRecordsOutline,
   CheckSheetYuanOutline,
@@ -122,6 +131,7 @@ export {
   DashboardOutline,
   DataReportOutline,
   DisplayOutline,
+  DoubleArrowRectSettingOutline,
   DoubleUpRectDextroversionOutline,
   DoubleUpRectSettingOutline,
   DraftsOutline,
@@ -154,6 +164,7 @@ export {
   InventoryRecordsOutline,
   MobilePhoneOutline,
   MoreCircleOutline,
+  MultilayerCylinderSettingOutline,
   OperatorOutline,
   PageRecordOutline,
   PaletteYuanOutline,
@@ -162,6 +173,7 @@ export {
   ReceiptOutline,
   RecordSettingOutline,
   ScreeningOutline,
+  SealRectSettingOutline,
   ShopOutline,
   ShoppingBagOutline,
   SpeedOutline,
@@ -189,6 +201,7 @@ export default {
   AnalysisOutline,
   Apartment2Outline,
   ApartmentOutline,
+  ArcRectSettingOutline,
   ArrearsCircleColours,
   ArrowDownRectDextroversionOutline,
   ArrowDownRectSettingOutline,
@@ -198,7 +211,9 @@ export default {
   BoardLineOutline,
   BoardPieOutline,
   BoardYuanOutline,
+  BoatAnchorRectSettingOutline,
   BookOutline,
+  BookmarkRectSettingOutline,
   BucketOutline,
   CheckRecordsOutline,
   CheckSheetYuanOutline,
@@ -216,6 +231,7 @@ export default {
   DashboardOutline,
   DataReportOutline,
   DisplayOutline,
+  DoubleArrowRectSettingOutline,
   DoubleUpRectDextroversionOutline,
   DoubleUpRectSettingOutline,
   DraftsOutline,
@@ -248,6 +264,7 @@ export default {
   InventoryRecordsOutline,
   MobilePhoneOutline,
   MoreCircleOutline,
+  MultilayerCylinderSettingOutline,
   OperatorOutline,
   PageRecordOutline,
   PaletteYuanOutline,
@@ -256,6 +273,7 @@ export default {
   ReceiptOutline,
   RecordSettingOutline,
   ScreeningOutline,
+  SealRectSettingOutline,
   ShopOutline,
   ShoppingBagOutline,
   SpeedOutline,
