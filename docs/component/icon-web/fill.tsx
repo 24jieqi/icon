@@ -1,10 +1,11 @@
 import React from 'react'
 
-import { SuccessFill } from '@fruits-chain/icons-react'
+import { OctangleUserFill, SuccessFill } from '@fruits-chain/icons-react'
 
 import Code from '../icon/code'
 
 const icons: { name: string; Component: any }[] = [
+  { name: 'OctangleUserFill', Component: OctangleUserFill },
   { name: 'SuccessFill', Component: SuccessFill },
 ]
 

@@ -66,6 +66,7 @@ import InventoryRecordsOutline from './inventory-records-outline'
 import MobilePhoneOutline from './mobile-phone-outline'
 import MoreCircleOutline from './more-circle-outline'
 import MultilayerCylinderSettingOutline from './multilayer-cylinder-setting-outline'
+import OctangleUserFill from './octangle-user-fill'
 import OperatorOutline from './operator-outline'
 import PageRecordOutline from './page-record-outline'
 import PaletteYuanOutline from './palette-yuan-outline'
@@ -165,6 +166,7 @@ export {
   MobilePhoneOutline,
   MoreCircleOutline,
   MultilayerCylinderSettingOutline,
+  OctangleUserFill,
   OperatorOutline,
   PageRecordOutline,
   PaletteYuanOutline,
@@ -265,6 +267,7 @@ export default {
   MobilePhoneOutline,
   MoreCircleOutline,
   MultilayerCylinderSettingOutline,
+  OctangleUserFill,
   OperatorOutline,
   PageRecordOutline,
   PaletteYuanOutline,
