@@ -15,6 +15,7 @@ import BoardYuanOutline from './board-yuan-outline'
 import BoatAnchorRectSettingOutline from './boat-anchor-rect-setting-outline'
 import BookOutline from './book-outline'
 import BookmarkRectSettingOutline from './bookmark-rect-setting-outline'
+import BookmarkRectSwapOutline from './bookmark-rect-swap-outline'
 import BucketOutline from './bucket-outline'
 import CheckRecordsOutline from './check-records-outline'
 import CheckSheetYuanOutline from './check-sheet-yuan-outline'
@@ -115,6 +116,7 @@ export {
   BoatAnchorRectSettingOutline,
   BookOutline,
   BookmarkRectSettingOutline,
+  BookmarkRectSwapOutline,
   BucketOutline,
   CheckRecordsOutline,
   CheckSheetYuanOutline,
@@ -216,6 +218,7 @@ export default {
   BoatAnchorRectSettingOutline,
   BookOutline,
   BookmarkRectSettingOutline,
+  BookmarkRectSwapOutline,
   BucketOutline,
   CheckRecordsOutline,
   CheckSheetYuanOutline,
