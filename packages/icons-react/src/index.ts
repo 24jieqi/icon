@@ -77,6 +77,7 @@ import ReceiptOutline from './receipt-outline'
 import RecordSettingOutline from './record-setting-outline'
 import ScreeningOutline from './screening-outline'
 import SealRectSettingOutline from './seal-rect-setting-outline'
+import SearchOutline from './search-outline'
 import ShopOutline from './shop-outline'
 import ShoppingBagOutline from './shopping-bag-outline'
 import SpeedOutline from './speed-outline'
@@ -178,6 +179,7 @@ export {
   RecordSettingOutline,
   ScreeningOutline,
   SealRectSettingOutline,
+  SearchOutline,
   ShopOutline,
   ShoppingBagOutline,
   SpeedOutline,
@@ -280,6 +282,7 @@ export default {
   RecordSettingOutline,
   ScreeningOutline,
   SealRectSettingOutline,
+  SearchOutline,
   ShopOutline,
   ShoppingBagOutline,
   SpeedOutline,
