@@ -22,9 +22,9 @@
     "ncu": "npx npm-check-updates -u",
     "gen:iconfont:web": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=web",
     "gen:iconfont:app": "ts-node --project tsconfig.json libs/iconfont-parser.ts type=app",
-    "gen:iconpark:web": "ts-node --project tsconfig.json libs/iconpark-parser.ts type=web",
-    "gen:iconpark:app": "ts-node --project tsconfig.json libs/iconpark-parser.ts type=app",
-    "gen:iconpark:taro": "ts-node --project tsconfig.json libs/iconpark-parser.ts type=taro",
+    "gen:web": "ts-node --project tsconfig.json libs/iconpark-parser.ts type=web",
+    "gen:app": "ts-node --project tsconfig.json libs/iconpark-parser.ts type=app",
+    "gen:taro": "ts-node --project tsconfig.json libs/iconpark-parser.ts type=taro",
     "commit": "npx git-cz",
     "lint:ts": "tsc --noEmit && eslint packages/**/src --ext .ts,.tsx"
   },
