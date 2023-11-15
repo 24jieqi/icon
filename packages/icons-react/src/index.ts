@@ -16,6 +16,7 @@ import BoatAnchorRectSettingOutline from './boat-anchor-rect-setting-outline'
 import BookOutline from './book-outline'
 import BookmarkRectSettingOutline from './bookmark-rect-setting-outline'
 import BookmarkRectSwapOutline from './bookmark-rect-swap-outline'
+import BrokenRectSettingOutline from './broken-rect-setting-outline'
 import BucketOutline from './bucket-outline'
 import CheckRecordsOutline from './check-records-outline'
 import CheckSheetYuanOutline from './check-sheet-yuan-outline'
@@ -55,12 +56,14 @@ import FileUserOutline from './file-user-outline'
 import FileYuanOutline from './file-yuan-outline'
 import FrameOutline from './frame-outline'
 import FruitStorageOutline from './fruit-storage-outline'
+import GoldBrickSettingOutline from './gold-brick-setting-outline'
 import HandArrowUpOutline from './hand-arrow-up-outline'
 import HandCoinInversionOutline from './hand-coin-inversion-outline'
 import HandCoinOutline from './hand-coin-outline'
 import HandDoubleDownOutline from './hand-double-down-outline'
 import HomeOutline from './home-outline'
 import HomeSettingOutline from './home-setting-outline'
+import HomeSwapOutline from './home-swap-outline'
 import ImageOpenOutline from './image-open-outline'
 import ImageStowOutline from './image-stow-outline'
 import InventoryRecordsOutline from './inventory-records-outline'
@@ -118,6 +121,7 @@ export {
   BookOutline,
   BookmarkRectSettingOutline,
   BookmarkRectSwapOutline,
+  BrokenRectSettingOutline,
   BucketOutline,
   CheckRecordsOutline,
   CheckSheetYuanOutline,
@@ -157,12 +161,14 @@ export {
   FileYuanOutline,
   FrameOutline,
   FruitStorageOutline,
+  GoldBrickSettingOutline,
   HandArrowUpOutline,
   HandCoinInversionOutline,
   HandCoinOutline,
   HandDoubleDownOutline,
   HomeOutline,
   HomeSettingOutline,
+  HomeSwapOutline,
   ImageOpenOutline,
   ImageStowOutline,
   InventoryRecordsOutline,
@@ -221,6 +227,7 @@ export default {
   BookOutline,
   BookmarkRectSettingOutline,
   BookmarkRectSwapOutline,
+  BrokenRectSettingOutline,
   BucketOutline,
   CheckRecordsOutline,
   CheckSheetYuanOutline,
@@ -260,12 +267,14 @@ export default {
   FileYuanOutline,
   FrameOutline,
   FruitStorageOutline,
+  GoldBrickSettingOutline,
   HandArrowUpOutline,
   HandCoinInversionOutline,
   HandCoinOutline,
   HandDoubleDownOutline,
   HomeOutline,
   HomeSettingOutline,
+  HomeSwapOutline,
   ImageOpenOutline,
   ImageStowOutline,
   InventoryRecordsOutline,
