@@ -12,7 +12,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
     "l-changed": "lerna changed",
-    "l-publish": "lerna publish",
+    "l-publish": "npm run build:web && npm run build:app && npm run build:taro && lerna publish",
     "l-publish-package": "lerna publish from-package",
     "dev": "dumi dev",
     "doc:github-build": "cross-env PUBLIC_PATH=icon-doc/ dumi build",
