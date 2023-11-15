@@ -97,6 +97,7 @@ import UserRectSettingOutline from './user-rect-setting-outline'
 import UserSettingOutline from './user-setting-outline'
 import WeChatPayColours from './we-chat-pay-colours'
 import YuanCircleColours from './yuan-circle-colours'
+import YuanCircleFill from './yuan-circle-fill'
 import YuanCircleOutline from './yuan-circle-outline'
 import YuanCircleSettingOutline from './yuan-circle-setting-outline'
 import YuanImportOutline from './yuan-import-outline'
@@ -202,6 +203,7 @@ export {
   UserSettingOutline,
   WeChatPayColours,
   YuanCircleColours,
+  YuanCircleFill,
   YuanCircleOutline,
   YuanCircleSettingOutline,
   YuanImportOutline,
@@ -308,6 +310,7 @@ export default {
   UserSettingOutline,
   WeChatPayColours,
   YuanCircleColours,
+  YuanCircleFill,
   YuanCircleOutline,
   YuanCircleSettingOutline,
   YuanImportOutline,
