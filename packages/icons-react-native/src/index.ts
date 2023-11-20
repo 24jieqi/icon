@@ -66,6 +66,7 @@ import PlusOutline from './plus-outline'
 import QQColours from './QQ-colours'
 import QuestionCircleOutline from './question-circle-outline'
 import QuestionOutline from './question-outline'
+import RectSuccessOutline from './rect-success-outline'
 import SOPOutline from './s-o-p-outline'
 import ScanCodeOutline from './scan-code-outline'
 import SearchOutline from './search-outline'
@@ -167,6 +168,7 @@ export {
   QQColours,
   QuestionCircleOutline,
   QuestionOutline,
+  RectSuccessOutline,
   SOPOutline,
   ScanCodeOutline,
   SearchOutline,
@@ -269,6 +271,7 @@ export default {
   QQColours,
   QuestionCircleOutline,
   QuestionOutline,
+  RectSuccessOutline,
   SOPOutline,
   ScanCodeOutline,
   SearchOutline,
