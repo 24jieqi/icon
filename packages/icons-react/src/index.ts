@@ -93,6 +93,7 @@ import TaskPanelOutline from './task-panel-outline'
 import TeamOutline from './team-outline'
 import ThirdpartnarOutline from './thirdpartnar-outline'
 import TransferCircleColours from './transfer-circle-colours'
+import TrucksOutline from './trucks-outline'
 import UserRectSettingOutline from './user-rect-setting-outline'
 import UserSettingOutline from './user-setting-outline'
 import WeChatPayColours from './we-chat-pay-colours'
@@ -199,6 +200,7 @@ export {
   TeamOutline,
   ThirdpartnarOutline,
   TransferCircleColours,
+  TrucksOutline,
   UserRectSettingOutline,
   UserSettingOutline,
   WeChatPayColours,
@@ -306,6 +308,7 @@ export default {
   TeamOutline,
   ThirdpartnarOutline,
   TransferCircleColours,
+  TrucksOutline,
   UserRectSettingOutline,
   UserSettingOutline,
   WeChatPayColours,
