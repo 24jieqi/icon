@@ -10,17 +10,20 @@ import CameraFill from './camera-fill'
 import CertificateFill from './certificate-fill'
 import CertificateOutline from './certificate-outline'
 import ChainOutline from './chain-outline'
+import CheckOutline from './check-outline'
 import CircleOutline from './circle-outline'
 import CopyOutline from './copy-outline'
 import CorrectOutline from './correct-outline'
 import CrossFill from './cross-fill'
 import CrossOutline from './cross-outline'
 import DeleatOutline from './deleat-outline'
+import EditOutline from './edit-outline'
 import ExitOutline from './exit-outline'
 import FilterFill from './filter-fill'
 import Home2Outline from './home2-outline'
 import HomeOutline from './home-outline'
 import LocationFill from './location-fill'
+import LocationOutline from './location-outline'
 import MansionOutline from './mansion-outline'
 import MenuOutline from './menu-outline'
 import PhoneFill from './phone-fill'
@@ -54,17 +57,20 @@ export {
   CertificateFill,
   CertificateOutline,
   ChainOutline,
+  CheckOutline,
   CircleOutline,
   CopyOutline,
   CorrectOutline,
   CrossFill,
   CrossOutline,
   DeleatOutline,
+  EditOutline,
   ExitOutline,
   FilterFill,
   Home2Outline,
   HomeOutline,
   LocationFill,
+  LocationOutline,
   MansionOutline,
   MenuOutline,
   PhoneFill,
@@ -99,17 +105,20 @@ export default {
   CertificateFill,
   CertificateOutline,
   ChainOutline,
+  CheckOutline,
   CircleOutline,
   CopyOutline,
   CorrectOutline,
   CrossFill,
   CrossOutline,
   DeleatOutline,
+  EditOutline,
   ExitOutline,
   FilterFill,
   Home2Outline,
   HomeOutline,
   LocationFill,
+  LocationOutline,
   MansionOutline,
   MenuOutline,
   PhoneFill,
