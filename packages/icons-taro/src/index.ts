@@ -20,6 +20,7 @@ import DeleatOutline from './deleat-outline'
 import EditOutline from './edit-outline'
 import ExitOutline from './exit-outline'
 import FilterFill from './filter-fill'
+import FreightCircleColours from './freight-circle-colours'
 import Home2Outline from './home2-outline'
 import HomeOutline from './home-outline'
 import LocationFill from './location-fill'
@@ -67,6 +68,7 @@ export {
   EditOutline,
   ExitOutline,
   FilterFill,
+  FreightCircleColours,
   Home2Outline,
   HomeOutline,
   LocationFill,
@@ -115,6 +117,7 @@ export default {
   EditOutline,
   ExitOutline,
   FilterFill,
+  FreightCircleColours,
   Home2Outline,
   HomeOutline,
   LocationFill,
