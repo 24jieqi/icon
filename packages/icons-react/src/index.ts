@@ -88,6 +88,7 @@ import SuccessCircleColours from './success-circle-colours'
 import SuccessFill from './success-fill'
 import SuccessOutline from './success-outline'
 import SwapRectSettingOutline from './swap-rect-setting-outline'
+import TagsOutline from './tags-outline'
 import TargetOutline from './target-outline'
 import TaskPanelOutline from './task-panel-outline'
 import TeamOutline from './team-outline'
@@ -195,6 +196,7 @@ export {
   SuccessFill,
   SuccessOutline,
   SwapRectSettingOutline,
+  TagsOutline,
   TargetOutline,
   TaskPanelOutline,
   TeamOutline,
@@ -303,6 +305,7 @@ export default {
   SuccessFill,
   SuccessOutline,
   SwapRectSettingOutline,
+  TagsOutline,
   TargetOutline,
   TaskPanelOutline,
   TeamOutline,

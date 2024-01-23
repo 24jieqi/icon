@@ -140,7 +140,7 @@ const genAppCode = () => {
 }
 
 const genWebCode = () => {
-  genCode('svg_10907_105.e7e560ba22c481f22f1d470698adee40', 'web', {
+  genCode('svg_10907_106.e3853a88b6361da5101ee7f58b573fa0', 'web', {
     output: path.join(__dirname, '../packages/icons-react/src'),
     removeIgnore: [],
     genCodeFN: genReact,
