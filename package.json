@@ -9,8 +9,8 @@
     "access": "public"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
+    "l-version": "lerna version",
     "l-changed": "lerna changed",
     "l-publish": "npm run build:web && npm run build:app && npm run build:taro && lerna publish",
     "l-publish-package": "lerna publish from-package",
@@ -45,7 +45,7 @@
     "cross-env": "^7.0.3",
     "dumi": "^2.2.17",
     "father": "^4.4.0",
-    "lerna": "^6.6.2",
+    "lerna": "^8.1.2",
     "node-fetch": "^3.3.2",
     "prettier": "^3.2.5",
     "react": "^18.2.0",
