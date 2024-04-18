@@ -1,0 +1,10 @@
+import React from 'react'
+
+import { genOutlineIcon } from './gen'
+
+const PlusOutline = genOutlineIcon(({ color, strokeWidth }) => {
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M3 12h18m-9 8.999v-18" stroke="${color}" stroke-width="${strokeWidth || 2}" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>`
+})
+export default PlusOutline

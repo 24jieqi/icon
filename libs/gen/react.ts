@@ -3,9 +3,9 @@ import fsPromise from 'fs/promises'
 import lodash from 'lodash'
 
 import type { SVGGroupElementProps, BaseSVGElementProps } from '../fetch-xml'
-import { joinProps, ignorePropsBase } from '../helper.js'
+import { joinProps, ignorePropsBase } from '../helper'
 import type { GenCodeFN } from '../interface'
-import { prettierTypescript } from '../prettier.js'
+import { prettierTypescript } from '../prettier'
 
 const renderTag = (
   tag: string,
@@ -39,10 +39,10 @@ const renderIcon = (icon: SVGGroupElementProps): string => {
     .join('')
 }
 
-export const genReact: GenCodeFN = (output, componentName, svgProps) => {
+export const genReact: GenCodeFN = async (output, componentName, svgProps) => {
   const elements: SVGGroupElementProps = lodash.omit(svgProps, ['$'])
 
-  const code = prettierTypescript(
+  const code = await prettierTypescript(
     `import React from 'react'
       const ${componentName}: React.FC<React.SVGProps<SVGSVGElement>> = props => {
         return (

@@ -2,7 +2,7 @@ import { Row, Col, Empty, message } from 'antd'
 import copy from 'copy-to-clipboard'
 import React, { memo } from 'react'
 
-import STYLES from './style.less'
+import STYLES from './style.module.less'
 
 interface Icon {
   name: string

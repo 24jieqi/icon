@@ -1,16 +1,16 @@
 import fsPromise from 'fs/promises'
 
 import type { GenDemo } from '../interface'
-import { prettierTypescript } from '../prettier.js'
+import { prettierTypescript } from '../prettier'
 
-export const genDemo: GenDemo = ({
+export const genDemo: GenDemo = async ({
   componentName,
   output,
   componentNames,
   name,
   currentColor = false,
 }) => {
-  const code = prettierTypescript(
+  const code = await prettierTypescript(
     `import React from 'react'
 
     import { ${componentNames.join(',')} } from '${name}'

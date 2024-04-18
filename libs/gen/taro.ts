@@ -3,9 +3,9 @@ import fsPromise from 'fs/promises'
 import lodash from 'lodash'
 
 import type { SVGGroupElementProps, BaseSVGElementProps } from '../fetch-xml'
-import { excludeProps, ignorePropsBase } from '../helper.js'
+import { excludeProps, ignorePropsBase } from '../helper'
 import type { GenCodeFN } from '../interface'
-import { prettierTypescript } from '../prettier.js'
+import { prettierTypescript } from '../prettier'
 
 const joinProps = (props: Record<string, string>) => {
   return Object.entries(props)
@@ -23,7 +23,7 @@ const renderTag = (
   }`
 }
 
-export const genTaro: GenCodeFN = (output, componentName, svgProps) => {
+export const genTaro: GenCodeFN = async (output, componentName, svgProps) => {
   const isOutline = /Outline$/.test(componentName)
   const isColours = /Colours$/.test(componentName)
   const correctionProps = (props: BaseSVGElementProps['$']) => {
@@ -84,10 +84,10 @@ export const genTaro: GenCodeFN = (output, componentName, svgProps) => {
   const genFNString = isColours
     ? 'genColoursIcon'
     : isOutline
-    ? 'genOutlineIcon'
-    : 'genFillIcon'
+      ? 'genOutlineIcon'
+      : 'genFillIcon'
 
-  const code = prettierTypescript(
+  const code = await prettierTypescript(
     `import React from 'react'
 
     import { ${genFNString} } from './gen'

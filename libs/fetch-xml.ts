@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 import { parseString } from 'xml2js'
 
-import { log } from './log.js'
+import { log } from './log'
 
 export interface BaseSVGElementProps {
   $: Record<string, string>

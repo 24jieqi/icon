@@ -2,18 +2,18 @@ import fsPromise from 'fs/promises'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
-import { fetchXml } from './fetch-xml.js'
-import { remove } from './fs.js'
-import { genDemo } from './gen/demo.js'
+import { fetchXml } from './fetch-xml'
+import { remove } from './fs'
+import { genDemo } from './gen/demo'
 import type { ComponentItem } from './gen/entry'
-import { genEntry } from './gen/entry.js'
-import { genReactNative } from './gen/react-native.js'
-import { genReact } from './gen/react.js'
-import { genTaro } from './gen/taro.js'
-import { string2CamelCase } from './helper.js'
+import { genEntry } from './gen/entry'
+import { genReact } from './gen/react'
+import { genReactNative } from './gen/react-native'
+import { genTaro } from './gen/taro'
+import { string2CamelCase } from './helper'
 import type { GenCodeConfig } from './interface'
-import { log } from './log.js'
-import { prettierTypescript } from './prettier.js'
+import { log } from './log'
+import { prettierTypescript } from './prettier'
 
 const argsObject = process.argv
   .slice(2)
@@ -85,7 +85,7 @@ const genCode = async (
 
   log('FgGreen', '✅ 生成各组件新文件')
 
-  const exportCode = prettierTypescript(genEntry(finishedComponents))
+  const exportCode = await prettierTypescript(genEntry(finishedComponents))
 
   log('FgCyan', '🟩 入口文件')
 
@@ -131,7 +131,7 @@ const genCode = async (
 }
 
 const genAppCode = () => {
-  genCode('svg_10968_100.c17e0e730312ee5d6c49fc49ccbe76a2', 'app', {
+  genCode('svg_10968_115.d8be5a2d4a184ebdd5e1b0433864347b', 'app', {
     output: path.join(__dirname, '../packages/icons-react-native/src'),
     removeIgnore: ['gen.tsx'],
     genCodeFN: genReactNative,
@@ -140,7 +140,7 @@ const genAppCode = () => {
 }
 
 const genWebCode = () => {
-  genCode('svg_10907_106.e3853a88b6361da5101ee7f58b573fa0', 'web', {
+  genCode('svg_10907_106.9beb1d36dbe4cbcec404ba7b66f0ea3f', 'web', {
     output: path.join(__dirname, '../packages/icons-react/src'),
     removeIgnore: [],
     genCodeFN: genReact,
@@ -150,7 +150,7 @@ const genWebCode = () => {
 }
 
 const genTaroCode = () => {
-  genCode('svg_26753_46.2cbb3e5af802611c0e6bb1363b7999b3', 'taro', {
+  genCode('svg_26753_64.9d2cb98abb421d1d8df95a7de36d0d65', 'taro', {
     output: path.join(__dirname, '../packages/icons-taro/src'),
     removeIgnore: ['gen.tsx'],
     genCodeFN: genTaro,

@@ -18,10 +18,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hjfruit/icon.git"
+    "url": "git+https://github.com/24jieqi/icon.git"
   },
   "bugs": {
-    "url": "https://github.com/hjfruit/icon/issues"
+    "url": "https://github.com/24jieqi/icon/issues"
   },
   "peerDependencies": {
     "@tarojs/components": "*"

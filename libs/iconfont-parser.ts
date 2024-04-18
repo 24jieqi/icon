@@ -2,14 +2,14 @@ import fsPromise from 'fs/promises'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
-import { fetchXml } from './fetch-xml.js'
-import { remove } from './fs.js'
-import { genDemo } from './gen/demo.js'
-import { genReactNative } from './gen/react-native.js'
-import { genReact } from './gen/react.js'
+import { fetchXml } from './fetch-xml'
+import { remove } from './fs'
+import { genDemo } from './gen/demo'
+import { genReact } from './gen/react'
+import { genReactNative } from './gen/react-native'
 import type { GenCodeConfig } from './interface'
-import { log } from './log.js'
-import { prettierTypescript } from './prettier.js'
+import { log } from './log'
+import { prettierTypescript } from './prettier'
 
 const argsObject = process.argv
   .slice(2)
@@ -80,7 +80,7 @@ const genCode = async (
 
   log('FgGreen', '✅ 生成各组件新文件')
 
-  const exportCode = prettierTypescript(`
+  const exportCode = await prettierTypescript(`
       ${finishedComponents
         .map(c => `export { default as ${c.name} } from './${c.filename}'`)
         .join(';')}

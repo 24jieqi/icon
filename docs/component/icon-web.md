@@ -31,12 +31,12 @@ export default () => {
 
 ## 线框风格
 
-<code compact inline src="./icon-web/outline.tsx" />
+<code compact inline src="./icon-web/outline.tsx"></code>
 
 ## 实底风格
 
-<code compact inline src="./icon-web/fill.tsx" />
+<code compact inline src="./icon-web/fill.tsx"></code>
 
 ## 多彩风格
 
-<code compact inline src="./icon-web/colours.tsx" />
+<code compact inline src="./icon-web/colours.tsx"></code>

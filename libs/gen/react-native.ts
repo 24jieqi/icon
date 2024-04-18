@@ -28,7 +28,11 @@ const renderTag = (
   }`
 }
 
-export const genReactNative: GenCodeFN = (output, componentName, svgProps) => {
+export const genReactNative: GenCodeFN = async (
+  output,
+  componentName,
+  svgProps,
+) => {
   const isOutline = /Outline$/.test(componentName)
   const isColours = /Colours$/.test(componentName)
   const correctionProps = (props: BaseSVGElementProps['$']) => {
@@ -92,10 +96,10 @@ export const genReactNative: GenCodeFN = (output, componentName, svgProps) => {
   const genFNString = isColours
     ? 'genColoursIcon'
     : isOutline
-    ? 'genOutlineIcon'
-    : 'genFillIcon'
+      ? 'genOutlineIcon'
+      : 'genFillIcon'
 
-  const code = prettierTypescript(
+  const code = await prettierTypescript(
     `import React from 'react'
      import { ${tags.join(',')} } from 'react-native-svg'
 

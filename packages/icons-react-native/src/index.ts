@@ -26,6 +26,8 @@ import CircleZhongColours from './circle-zhong-colours'
 import CircleZhuanColours from './circle-zhuan-colours'
 import CircleZhuangColours from './circle-zhuang-colours'
 import ClickCopyOutline from './click-copy-outline'
+import CommentFill from './comment-fill'
+import CommentOutline from './comment-outline'
 import ComputerOutline from './computer-outline'
 import CoordOutline from './coord-outline'
 import CopyOutline from './copy-outline'
@@ -35,24 +37,34 @@ import CrossOutline from './cross-outline'
 import DeleatOutline from './deleat-outline'
 import DeleteFill from './delete-fill'
 import DoubleArrowClockwiseOutline from './double-arrow-clockwise-outline'
+import DraftsOutline from './drafts-outline'
+import EditCofdc5f0Outline from './edit-cofdc5f0-outline'
 import EditOutline from './edit-outline'
 import ExcelColours from './excel-colours'
 import ExplainOutline from './explain-outline'
+import ExportOutline from './export-outline'
 import EyeCloseOutline from './eye-close-outline'
 import EyeOutline from './eye-outline'
 import FileOutline from './file-outline'
 import FiltrateOutline from './filtrate-outline'
+import GrassFill from './grass-fill'
+import GrassOutline from './grass-outline'
+import HexagonBarOutline from './hexagon-bar-outline'
 import HomeOutline from './home-outline'
 import IdentificationOutline from './identification-outline'
 import IllustrateOutline from './illustrate-outline'
 import InfoCircleOutline from './info-circle-outline'
+import LikeFill from './like-fill'
+import LikeOutline from './like-outline'
 import LocationCircleFill from './location-circle-fill'
 import LocationFill from './location-fill'
 import LocationOutline from './location-outline'
+import ManOutline from './man-outline'
 import MenuOutline from './menu-outline'
 import MinusOutline from './minus-outline'
 import MobileScreenOutline from './mobile-screen-outline'
 import MoreOutline from './more-outline'
+import MoreRectangleOutline from './more-rectangle-outline'
 import NewColours from './new-colours'
 import OrderDownOutline from './order-down-outline'
 import OrderOutline from './order-outline'
@@ -71,6 +83,8 @@ import SOPOutline from './s-o-p-outline'
 import ScanCodeOutline from './scan-code-outline'
 import SearchOutline from './search-outline'
 import SettingOutline from './setting-outline'
+import StarFill from './star-fill'
+import StarOutline from './star-outline'
 import SuccessCircleColours from './success-circle-colours'
 import SuccessCircleOutline from './success-circle-outline'
 import SuccessFill from './success-fill'
@@ -95,6 +109,7 @@ import WeChatColours from './we-chat-colours'
 import WeChatOutline from './we-chat-outline'
 import WeChatPayColours from './we-chat-pay-colours'
 import WeiboColours from './weibo-colours'
+import WomanOutline from './woman-outline'
 import WordColours from './word-colours'
 import YuanCircleColours from './yuan-circle-colours'
 import YuanCircleFill from './yuan-circle-fill'
@@ -128,6 +143,8 @@ export {
   CircleZhuanColours,
   CircleZhuangColours,
   ClickCopyOutline,
+  CommentFill,
+  CommentOutline,
   ComputerOutline,
   CoordOutline,
   CopyOutline,
@@ -137,24 +154,34 @@ export {
   DeleatOutline,
   DeleteFill,
   DoubleArrowClockwiseOutline,
+  DraftsOutline,
+  EditCofdc5f0Outline,
   EditOutline,
   ExcelColours,
   ExplainOutline,
+  ExportOutline,
   EyeCloseOutline,
   EyeOutline,
   FileOutline,
   FiltrateOutline,
+  GrassFill,
+  GrassOutline,
+  HexagonBarOutline,
   HomeOutline,
   IdentificationOutline,
   IllustrateOutline,
   InfoCircleOutline,
+  LikeFill,
+  LikeOutline,
   LocationCircleFill,
   LocationFill,
   LocationOutline,
+  ManOutline,
   MenuOutline,
   MinusOutline,
   MobileScreenOutline,
   MoreOutline,
+  MoreRectangleOutline,
   NewColours,
   OrderDownOutline,
   OrderOutline,
@@ -173,6 +200,8 @@ export {
   ScanCodeOutline,
   SearchOutline,
   SettingOutline,
+  StarFill,
+  StarOutline,
   SuccessCircleColours,
   SuccessCircleOutline,
   SuccessFill,
@@ -197,6 +226,7 @@ export {
   WeChatOutline,
   WeChatPayColours,
   WeiboColours,
+  WomanOutline,
   WordColours,
   YuanCircleColours,
   YuanCircleFill,
@@ -231,6 +261,8 @@ export default {
   CircleZhuanColours,
   CircleZhuangColours,
   ClickCopyOutline,
+  CommentFill,
+  CommentOutline,
   ComputerOutline,
   CoordOutline,
   CopyOutline,
@@ -240,24 +272,34 @@ export default {
   DeleatOutline,
   DeleteFill,
   DoubleArrowClockwiseOutline,
+  DraftsOutline,
+  EditCofdc5f0Outline,
   EditOutline,
   ExcelColours,
   ExplainOutline,
+  ExportOutline,
   EyeCloseOutline,
   EyeOutline,
   FileOutline,
   FiltrateOutline,
+  GrassFill,
+  GrassOutline,
+  HexagonBarOutline,
   HomeOutline,
   IdentificationOutline,
   IllustrateOutline,
   InfoCircleOutline,
+  LikeFill,
+  LikeOutline,
   LocationCircleFill,
   LocationFill,
   LocationOutline,
+  ManOutline,
   MenuOutline,
   MinusOutline,
   MobileScreenOutline,
   MoreOutline,
+  MoreRectangleOutline,
   NewColours,
   OrderDownOutline,
   OrderOutline,
@@ -276,6 +318,8 @@ export default {
   ScanCodeOutline,
   SearchOutline,
   SettingOutline,
+  StarFill,
+  StarOutline,
   SuccessCircleColours,
   SuccessCircleOutline,
   SuccessFill,
@@ -300,6 +344,7 @@ export default {
   WeChatOutline,
   WeChatPayColours,
   WeiboColours,
+  WomanOutline,
   WordColours,
   YuanCircleColours,
   YuanCircleFill,

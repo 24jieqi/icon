@@ -32,7 +32,8 @@
     "paths": {
       "@fruits-chain/icons-react": ["./packages/icons-react/src"],
       "@fruits-chain/icons-react-native": ["./packages/icons-react-native/src"],
-      "@fruits-chain/icons-taro": ["./packages/icons-taro/src"]
+      "@fruits-chain/icons-taro": ["./packages/icons-taro/src"],
+      "@@/*": [".dumi/tmp/*"]
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
