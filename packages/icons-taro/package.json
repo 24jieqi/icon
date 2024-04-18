@@ -3,7 +3,7 @@
   "version": "0.0.11",
   "description": "🎨 Taro Icon",
   "author": "LING_ZI_QING <onlylingstudio@gmail.com>",
-  "homepage": "https://github.com/hjfruit/icon#readme",
+  "homepage": "https://24jieqi.github.io/icon/component/icon-taro",
   "license": "Apache-2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
