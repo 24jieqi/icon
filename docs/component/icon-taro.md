@@ -9,6 +9,13 @@ nav:
 
 语义化的矢量图形。
 
+[icon-taro-npm-url]: https://www.npmjs.com/package/@fruits-chain/icons-taro
+
+[![](https://img.shields.io/npm/v/@fruits-chain/icons-taro.svg)][icon-taro-npm-url]
+[![](https://img.shields.io/npm/dm/@fruits-chain/icons-taro.svg)][icon-taro-npm-url]
+[![](https://img.shields.io/badge/language-typescript-blue.svg)](https://www.typescriptlang.org/)
+[![install size](https://packagephobia.com/badge?p=@fruits-chain/icons-taro)](https://packagephobia.com/result?p=@fruits-chain/icons-taro)
+
 ```tsx
 /**
  * defaultShowCode: true

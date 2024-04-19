@@ -9,6 +9,13 @@ nav:
 
 语义化的矢量图形。
 
+[icon-react-native-npm-url]: https://www.npmjs.com/package/@fruits-chain/icons-react-native
+
+[![](https://img.shields.io/npm/v/@fruits-chain/icons-react-native.svg)][icon-react-native-npm-url]
+[![](https://img.shields.io/npm/dm/@fruits-chain/icons-react-native.svg)][icon-react-native-npm-url]
+[![](https://img.shields.io/badge/language-typescript-blue.svg)](https://www.typescriptlang.org/)
+[![install size](https://packagephobia.com/badge?p=@fruits-chain/icons-react-native)](https://packagephobia.com/result?p=@fruits-chain/icons-react-native)
+
 ```tsx
 /**
  * defaultShowCode: true
