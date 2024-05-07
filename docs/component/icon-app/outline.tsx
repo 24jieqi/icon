@@ -20,7 +20,7 @@ import {
   CopyOutline,
   CrossCircleOutline,
   CrossOutline,
-  DeleatOutline,
+  DeleteOutline,
   DoubleArrowClockwiseOutline,
   DraftsOutline,
   EditCofdc5f0Outline,
@@ -99,7 +99,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'CopyOutline', Component: CopyOutline },
   { name: 'CrossCircleOutline', Component: CrossCircleOutline },
   { name: 'CrossOutline', Component: CrossOutline },
-  { name: 'DeleatOutline', Component: DeleatOutline },
+  { name: 'DeleteOutline', Component: DeleteOutline },
   {
     name: 'DoubleArrowClockwiseOutline',
     Component: DoubleArrowClockwiseOutline,

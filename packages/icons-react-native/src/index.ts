@@ -34,8 +34,8 @@ import CopyOutline from './copy-outline'
 import CrossCircleOutline from './cross-circle-outline'
 import CrossFill from './cross-fill'
 import CrossOutline from './cross-outline'
-import DeleatOutline from './deleat-outline'
 import DeleteFill from './delete-fill'
+import DeleteOutline from './delete-outline'
 import DoubleArrowClockwiseOutline from './double-arrow-clockwise-outline'
 import DraftsOutline from './drafts-outline'
 import EditCofdc5f0Outline from './edit-cofdc5f0-outline'
@@ -151,8 +151,8 @@ export {
   CrossCircleOutline,
   CrossFill,
   CrossOutline,
-  DeleatOutline,
   DeleteFill,
+  DeleteOutline,
   DoubleArrowClockwiseOutline,
   DraftsOutline,
   EditCofdc5f0Outline,
@@ -269,8 +269,8 @@ export default {
   CrossCircleOutline,
   CrossFill,
   CrossOutline,
-  DeleatOutline,
   DeleteFill,
+  DeleteOutline,
   DoubleArrowClockwiseOutline,
   DraftsOutline,
   EditCofdc5f0Outline,

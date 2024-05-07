@@ -18,7 +18,7 @@ import CopyOutline from './copy-outline'
 import CorrectOutline from './correct-outline'
 import CrossFill from './cross-fill'
 import CrossOutline from './cross-outline'
-import DeleatOutline from './deleat-outline'
+import DeleteOutline from './delete-outline'
 import DraftsOutline from './drafts-outline'
 import EditCoga05jlOutline from './edit-coga05jl-outline'
 import EditOutline from './edit-outline'
@@ -84,7 +84,7 @@ export {
   CorrectOutline,
   CrossFill,
   CrossOutline,
-  DeleatOutline,
+  DeleteOutline,
   DraftsOutline,
   EditCoga05jlOutline,
   EditOutline,
@@ -151,7 +151,7 @@ export default {
   CorrectOutline,
   CrossFill,
   CrossOutline,
-  DeleatOutline,
+  DeleteOutline,
   DraftsOutline,
   EditCoga05jlOutline,
   EditOutline,

@@ -131,7 +131,7 @@ const genCode = async (
 }
 
 const genAppCode = () => {
-  genCode('svg_10968_115.d8be5a2d4a184ebdd5e1b0433864347b', 'app', {
+  genCode('svg_10968_115.ead9178007e9be3632f6d5f073436a2e', 'app', {
     output: path.join(__dirname, '../packages/icons-react-native/src'),
     removeIgnore: ['gen.tsx'],
     genCodeFN: genReactNative,
@@ -150,7 +150,7 @@ const genWebCode = () => {
 }
 
 const genTaroCode = () => {
-  genCode('svg_26753_64.9d2cb98abb421d1d8df95a7de36d0d65', 'taro', {
+  genCode('svg_26753_64.234e689efc81476e1b048151197835b3', 'taro', {
     output: path.join(__dirname, '../packages/icons-taro/src'),
     removeIgnore: ['gen.tsx'],
     genCodeFN: genTaro,
