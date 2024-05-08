@@ -38,8 +38,8 @@ import DeleteFill from './delete-fill'
 import DeleteOutline from './delete-outline'
 import DoubleArrowClockwiseOutline from './double-arrow-clockwise-outline'
 import DraftsOutline from './drafts-outline'
-import EditCofdc5f0Outline from './edit-cofdc5f0-outline'
 import EditOutline from './edit-outline'
+import EditPenOutline from './edit-pen-outline'
 import ExcelColours from './excel-colours'
 import ExplainOutline from './explain-outline'
 import ExportOutline from './export-outline'
@@ -59,6 +59,7 @@ import LikeOutline from './like-outline'
 import LocationCircleFill from './location-circle-fill'
 import LocationFill from './location-fill'
 import LocationOutline from './location-outline'
+import LockOutline from './lock-outline'
 import ManOutline from './man-outline'
 import MenuOutline from './menu-outline'
 import MinusOutline from './minus-outline'
@@ -104,6 +105,7 @@ import VideoColours from './video-colours'
 import VolumeOutline from './volume-outline'
 import WarningCircleOutline from './warning-circle-outline'
 import WarningOutline from './warning-outline'
+import WarningTriangleOutline from './warning-triangle-outline'
 import WeChatCircleOfFriendsColours from './we-chat-circle-of-friends-colours'
 import WeChatColours from './we-chat-colours'
 import WeChatOutline from './we-chat-outline'
@@ -155,8 +157,8 @@ export {
   DeleteOutline,
   DoubleArrowClockwiseOutline,
   DraftsOutline,
-  EditCofdc5f0Outline,
   EditOutline,
+  EditPenOutline,
   ExcelColours,
   ExplainOutline,
   ExportOutline,
@@ -176,6 +178,7 @@ export {
   LocationCircleFill,
   LocationFill,
   LocationOutline,
+  LockOutline,
   ManOutline,
   MenuOutline,
   MinusOutline,
@@ -221,6 +224,7 @@ export {
   VolumeOutline,
   WarningCircleOutline,
   WarningOutline,
+  WarningTriangleOutline,
   WeChatCircleOfFriendsColours,
   WeChatColours,
   WeChatOutline,
@@ -273,8 +277,8 @@ export default {
   DeleteOutline,
   DoubleArrowClockwiseOutline,
   DraftsOutline,
-  EditCofdc5f0Outline,
   EditOutline,
+  EditPenOutline,
   ExcelColours,
   ExplainOutline,
   ExportOutline,
@@ -294,6 +298,7 @@ export default {
   LocationCircleFill,
   LocationFill,
   LocationOutline,
+  LockOutline,
   ManOutline,
   MenuOutline,
   MinusOutline,
@@ -339,6 +344,7 @@ export default {
   VolumeOutline,
   WarningCircleOutline,
   WarningOutline,
+  WarningTriangleOutline,
   WeChatCircleOfFriendsColours,
   WeChatColours,
   WeChatOutline,
