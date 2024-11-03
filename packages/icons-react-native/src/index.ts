@@ -11,6 +11,7 @@ import ArrowUpOutline from './arrow-up-outline'
 import ArrowsExpandOutline from './arrows-expand-outline'
 import ArrowsShrinkOutline from './arrows-shrink-outline'
 import BankCardCircleColours from './bank-card-circle-colours'
+import CameraFill from './camera-fill'
 import CameraOutline from './camera-outline'
 import CertificateOutline from './certificate-outline'
 import CircleDisabledColours from './circle-disabled-colours'
@@ -131,6 +132,7 @@ export {
   ArrowsExpandOutline,
   ArrowsShrinkOutline,
   BankCardCircleColours,
+  CameraFill,
   CameraOutline,
   CertificateOutline,
   CircleDisabledColours,
@@ -252,6 +254,7 @@ export default {
   ArrowsExpandOutline,
   ArrowsShrinkOutline,
   BankCardCircleColours,
+  CameraFill,
   CameraOutline,
   CertificateOutline,
   CircleDisabledColours,
