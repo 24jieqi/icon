@@ -97,6 +97,7 @@ import SwapVerticalOutline from './swap-vertical-outline'
 import TelephoneOutline from './telephone-outline'
 import ThermometerOutline from './thermometer-outline'
 import TimeCircleOutline from './time-circle-outline'
+import TimeColours from './time-colours'
 import TransferCircleColours from './transfer-circle-colours'
 import UploadOutline from './upload-outline'
 import UserFill from './user-fill'
@@ -216,6 +217,7 @@ export {
   TelephoneOutline,
   ThermometerOutline,
   TimeCircleOutline,
+  TimeColours,
   TransferCircleColours,
   UploadOutline,
   UserFill,
@@ -336,6 +338,7 @@ export default {
   TelephoneOutline,
   ThermometerOutline,
   TimeCircleOutline,
+  TimeColours,
   TransferCircleColours,
   UploadOutline,
   UserFill,

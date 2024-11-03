@@ -17,6 +17,7 @@ import {
   PDFColours,
   QQColours,
   SuccessCircleColours,
+  TimeColours,
   TransferCircleColours,
   VideoColours,
   WeChatCircleOfFriendsColours,
@@ -46,6 +47,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'PDFColours', Component: PDFColours },
   { name: 'QQColours', Component: QQColours },
   { name: 'SuccessCircleColours', Component: SuccessCircleColours },
+  { name: 'TimeColours', Component: TimeColours },
   { name: 'TransferCircleColours', Component: TransferCircleColours },
   { name: 'VideoColours', Component: VideoColours },
   {
