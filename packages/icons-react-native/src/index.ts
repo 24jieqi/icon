@@ -112,6 +112,7 @@ import WeChatCircleOfFriendsColours from './we-chat-circle-of-friends-colours'
 import WeChatColours from './we-chat-colours'
 import WeChatOutline from './we-chat-outline'
 import WeChatPayColours from './we-chat-pay-colours'
+import WechatFill from './wechat-fill'
 import WeiboColours from './weibo-colours'
 import WomanOutline from './woman-outline'
 import WordColours from './word-colours'
@@ -233,6 +234,7 @@ export {
   WeChatColours,
   WeChatOutline,
   WeChatPayColours,
+  WechatFill,
   WeiboColours,
   WomanOutline,
   WordColours,
@@ -355,6 +357,7 @@ export default {
   WeChatColours,
   WeChatOutline,
   WeChatPayColours,
+  WechatFill,
   WeiboColours,
   WomanOutline,
   WordColours,

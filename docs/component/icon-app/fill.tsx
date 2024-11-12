@@ -18,6 +18,7 @@ import {
   StarFill,
   SuccessFill,
   UserFill,
+  WechatFill,
   YuanCircleFill,
 } from '@fruits-chain/icons-react-native'
 
@@ -41,6 +42,7 @@ const icons: { name: string; Component: any }[] = [
   { name: 'StarFill', Component: StarFill },
   { name: 'SuccessFill', Component: SuccessFill },
   { name: 'UserFill', Component: UserFill },
+  { name: 'WechatFill', Component: WechatFill },
   { name: 'YuanCircleFill', Component: YuanCircleFill },
 ]
 
