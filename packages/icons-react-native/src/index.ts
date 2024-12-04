@@ -36,6 +36,7 @@ import CrossCircleOutline from './cross-circle-outline'
 import CrossFill from './cross-fill'
 import CrossOutline from './cross-outline'
 import DeleteFill from './delete-fill'
+import DeleteMiniOutline from './delete-mini-outline'
 import DeleteOutline from './delete-outline'
 import DoubleArrowClockwiseOutline from './double-arrow-clockwise-outline'
 import DraftsOutline from './drafts-outline'
@@ -63,6 +64,7 @@ import LocationOutline from './location-outline'
 import LockOutline from './lock-outline'
 import ManOutline from './man-outline'
 import MenuOutline from './menu-outline'
+import MessageOutline from './message-outline'
 import MinusOutline from './minus-outline'
 import MobileScreenOutline from './mobile-screen-outline'
 import MoreOutline from './more-outline'
@@ -80,6 +82,7 @@ import PlusOutline from './plus-outline'
 import QQColours from './QQ-colours'
 import QuestionCircleOutline from './question-circle-outline'
 import QuestionOutline from './question-outline'
+import QuitOutline from './quit-outline'
 import RectSuccessOutline from './rect-success-outline'
 import SOPOutline from './s-o-p-outline'
 import ScanCodeOutline from './scan-code-outline'
@@ -158,6 +161,7 @@ export {
   CrossFill,
   CrossOutline,
   DeleteFill,
+  DeleteMiniOutline,
   DeleteOutline,
   DoubleArrowClockwiseOutline,
   DraftsOutline,
@@ -185,6 +189,7 @@ export {
   LockOutline,
   ManOutline,
   MenuOutline,
+  MessageOutline,
   MinusOutline,
   MobileScreenOutline,
   MoreOutline,
@@ -202,6 +207,7 @@ export {
   QQColours,
   QuestionCircleOutline,
   QuestionOutline,
+  QuitOutline,
   RectSuccessOutline,
   SOPOutline,
   ScanCodeOutline,
@@ -281,6 +287,7 @@ export default {
   CrossFill,
   CrossOutline,
   DeleteFill,
+  DeleteMiniOutline,
   DeleteOutline,
   DoubleArrowClockwiseOutline,
   DraftsOutline,
@@ -308,6 +315,7 @@ export default {
   LockOutline,
   ManOutline,
   MenuOutline,
+  MessageOutline,
   MinusOutline,
   MobileScreenOutline,
   MoreOutline,
@@ -325,6 +333,7 @@ export default {
   QQColours,
   QuestionCircleOutline,
   QuestionOutline,
+  QuitOutline,
   RectSuccessOutline,
   SOPOutline,
   ScanCodeOutline,
